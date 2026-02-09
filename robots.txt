@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gunawansatyakusuma.github.io/sitemap.xml
