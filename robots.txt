@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gunawansatyakusuma.github.io/sitemap.xml
+https://gunawansatyakusuma.my.id/sitemap.xml
