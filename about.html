@@ -1,43 +1,134 @@
-<!DOCTYPE html>  
-<html lang="id">    
-<head> 
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tentang – Gunawan Satyakusuma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil Gunawan Satyakusuma – praktisi dokumentasi visual, peneliti independen, dan edukator digital berbasis di Bandung.">
+
+  <!-- Schema Person -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://gunawansatyakusuma.my.id/#person",
-  "name": "Gunawan Satyakusuma",
-  "url": "https://gunawansatyakusuma.my.id/",
-  "image": "https://gunawansatyakusuma.my.id/profile.jpg",
-  "jobTitle": "Praktisi Dokumentasi Visual",
-  "description": "Praktisi dokumentasi visual, peneliti independen, dan edukator digital berbasis di Bandung, Indonesia.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Bandung",
-    "addressCountry": "ID"
-  },
-  "sameAs": [
-    "https://www.instagram.com/satya_kusumah",
-    "https://www.linkedin.com/in/gunawan-satyakusuma-25549537a/",
-    "https://www.kompasiana.com/gunawansatyakusuma0121",
-    "https://www.youtube.com/@GunawanSatyakusuma",
-    "https://maps.app.goo.gl/wfCT8roodJKNSsJQA",
-    "https://maps.app.goo.gl/hTWmnpcbUJ6S6UvD9",
-    "https://www.google.com/maps/contrib/101596477192944298689"
-  ]
-}
-</script>
-<meta charset="UTF-8">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://gunawansatyakusuma.my.id/#person",
+    "name": "Gunawan Satyakusuma",
+    "url": "https://gunawansatyakusuma.my.id/",
+    "image": "https://gunawansatyakusuma.my.id/profile.jpg",
+    "jobTitle": "Praktisi Dokumentasi Visual",
+    "description": "Praktisi dokumentasi visual, peneliti independen, dan edukator digital berbasis di Bandung, Indonesia.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bandung",
+      "addressCountry": "ID"
+    },
+    "sameAs": [
+      "https://www.instagram.com/satya_kusumah",
+      "https://www.linkedin.com/in/gunawan-satyakusuma-25549537a/",
+      "https://www.kompasiana.com/gunawansatyakusuma0121",
+      "https://www.youtube.com/@GunawanSatyakusuma",
+      "https://maps.app.goo.gl/wfCT8roodJKNSsJQA",
+      "https://maps.app.goo.gl/hTWmnpcbUJ6S6UvD9",
+      "https://www.google.com/maps/contrib/101596477192944298689"
+    ]
+  }
+  </script>
 
-<title>Tentang – Gunawan Satyakusumah</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #001f1f, #000000);
+      color: white;
+      line-height: 1.8;
+    }
 
+    nav {
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #00ffff;
+    }
+
+    .hero-about {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    .hero-about h1 {
+      font-size: 42px;
+      background: linear-gradient(90deg, #00ffff, #00ff99);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .profile-img {
+      width: 180px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 40px auto 80px;
+      padding: 20px;
+    }
+
+    p {
+      color: #cccccc;
+      margin-bottom: 22px;
+      font-size: 16px;
+    }
+
+    .highlight-box {
+      margin-top: 40px;
+      padding: 20px;
+      border: 1px solid #00ffff33;
+      border-radius: 12px;
+      background: rgba(0, 255, 255, 0.05);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      border: 1px solid #00ffff;
+      color: #00ffff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00ffff;
+      color: black;
+    }
+
+    .small-note {
+      color: #00ffaa;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
+  <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
@@ -47,47 +138,61 @@
     <a href="g-loop.html">G-Loop</a>
     <a href="g-loop-visibility.html">Advisory</a>
     <a href="jasa-foto-video-bandung.html" class="active">Jasa Foto & Video</a>
-</nav>
+  </nav>
 
-<div class="hero-about">
+  <header class="hero-about">
     <h1>Tentang</h1>
-    <img src="profile.jpg" alt="Gunawan Satyakusumah" class="profile-img">
-</div>
+    <img src="profile.jpg" alt="Foto Gunawan Satyakusuma" class="profile-img">
+  </header>
 
-<div class="container">
+  <main class="container">
 
-<p>
-Gunawan Satyakusumah merupakan praktisi dokumentasi visual, peneliti independen, dan edukator digital yang berbasis di Bandung, Indonesia. Hingga tahun 2025, aktivitasnya berfokus pada dokumentasi visual berbasis fotografi, video, serta teknologi drone, dengan perhatian pada pengembangan literasi informasi di ruang digital dan keterbacaan informasi di lingkungan mesin pencari.
-</p>
-    
-<p style="color:#00ffaa; font-size:14px; margin-top:10px;">
-    Arsip dokumentasi terpusat & referensi entitas lintas platform.
+    <p>
+      Gunawan Satyakusuma merupakan praktisi dokumentasi visual, peneliti independen,
+      dan edukator digital yang berbasis di Bandung, Indonesia. Hingga tahun 2025,
+      aktivitasnya berfokus pada dokumentasi visual berbasis fotografi, video,
+      serta teknologi drone, dengan perhatian pada pengembangan literasi informasi
+      di ruang digital dan keterbacaan informasi di lingkungan mesin pencari.
     </p>
 
- <div style="margin-top:30px;">
+    <p class="small-note">
+      Arsip dokumentasi terpusat & referensi entitas lintas platform.
+    </p>
+
     <a href="portfolio.html" class="btn">Lihat Karya</a>
-</div>
 
-<p>
-Memiliki pengalaman di industri media, termasuk keterlibatan profesional dengan Kompas TV serta departemen produksi STV Bandung. Latar belakang ini membentuk pendekatan kerjanya terhadap standar dokumentasi visual, proses produksi media, serta penyajian informasi yang bertanggung jawab dan terstruktur.
-</p>
+    <p>
+      Memiliki pengalaman di industri media, termasuk keterlibatan profesional dengan
+      Kompas TV serta departemen produksi STV Bandung. Latar belakang ini membentuk
+      pendekatan kerjanya terhadap standar dokumentasi visual, proses produksi media,
+      serta penyajian informasi yang bertanggung jawab dan terstruktur.
+    </p>
 
-<p>
-Dari praktik tersebut berkembang minat pada bagaimana struktur informasi, konsistensi narasi, dan pola publikasi memengaruhi visibilitas entitas di ruang digital. Selain praktik dokumentasi lapangan, ia juga membagikan tulisan edukatif melalui berbagai platform digital, termasuk Kompasiana.
-</p>
+    <p>
+      Dari praktik tersebut berkembang minat pada bagaimana struktur informasi,
+      konsistensi narasi, dan pola publikasi memengaruhi visibilitas entitas di ruang
+      digital. Selain praktik dokumentasi lapangan, ia juga membagikan tulisan edukatif
+      melalui berbagai platform digital, termasuk Kompasiana.
+    </p>
 
-<div class="highlight-box">
-<p>
-Pada akhir tahun 2025, diperkenalkan <strong>G-Loop Method</strong> — sebuah pendekatan dokumentasi terhubung yang menitikberatkan pada konsistensi struktur informasi, koherensi aktivitas, dan pembacaan pola keterlihatan. Metode ini digunakan sebagai kerangka visibility advisory dalam membantu pelaku UMKM dan entitas lokal membangun kredibilitas digital secara bertahap.
-</p>
-</div>
+    <div class="highlight-box">
+      <p>
+        Pada akhir tahun 2025, diperkenalkan <strong>G-Loop Method</strong> — sebuah
+        pendekatan dokumentasi terhubung yang menitikberatkan pada konsistensi struktur
+        informasi, koherensi aktivitas, dan pembacaan pola keterlihatan. Metode ini
+        digunakan sebagai kerangka visibility advisory dalam membantu pelaku UMKM dan
+        entitas lokal membangun kredibilitas digital secara bertahap.
+      </p>
+    </div>
 
-<p>
-Situs ini berfungsi sebagai pusat arsip dokumentasi lintas platform yang merekam aktivitas lapangan, proses observasi, serta publikasi visual dan tulisan. Seluruh konten disusun sebagai rekam jejak terstruktur atas praktik dokumentasi dan advisory yang berkembang secara berkelanjutan.
-</p>
+    <p>
+      Situs ini berfungsi sebagai pusat arsip dokumentasi lintas platform yang merekam
+      aktivitas lapangan, proses observasi, serta publikasi visual dan tulisan.
+      Seluruh konten disusun sebagai rekam jejak terstruktur atas praktik dokumentasi
+      dan advisory yang berkembang secara berkelanjutan.
+    </p>
 
-</div>
+  </main>
 
 </body>
 </html>
-
