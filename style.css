@@ -12,41 +12,52 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: white;
   text-align: center;
-  background-color: #0a0f1a;
+  background-color: #070b14;
   overflow-x: hidden;
 }
 
+/* Layer utama orbit */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: -2;
 
-  background-image:
-    repeating-linear-gradient(
-      45deg,
-      rgba(0,255,255,0.15) 0px,
-      rgba(0,255,255,0.15) 1px,
+  background:
+    repeating-radial-gradient(
+      circle at center,
+      rgba(0,255,255,0.12) 0px,
+      rgba(0,255,255,0.12) 1px,
       transparent 1px,
-      transparent 80px
+      transparent 120px
     ),
-    repeating-linear-gradient(
-      -45deg,
-      rgba(0,255,255,0.15) 0px,
-      rgba(0,255,255,0.15) 1px,
-      transparent 1px,
-      transparent 80px
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(0,255,255,0.08) 0deg,
+      rgba(0,255,255,0.08) 1deg,
+      transparent 1deg,
+      transparent 30deg
     );
 
-  animation: webMove 40s linear infinite;
+  animation: rotateSystem 60s linear infinite;
 }
 
-@keyframes webMove {
+/* Glow depth */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+
+  background: radial-gradient(circle at center, rgba(0,200,255,0.15), transparent 70%);
+}
+
+@keyframes rotateSystem {
   from {
-    background-position: 0 0, 0 0;
+    transform: rotate(0deg);
   }
   to {
-    background-position: 200px 200px, -200px -200px;
+    transform: rotate(360deg);
   }
 }
 
