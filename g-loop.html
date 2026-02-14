@@ -1,185 +1,265 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<link rel="canonical" href="https://gunawansatyakusuma.github.io/about.html" />   
+
 <meta charset="UTF-8">
-<title>G-Loop Method – Arsip & Referensi Resmi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Arsip dan referensi resmi G-Loop Method oleh Gunawan Satyakusumah. Dokumentasi sistem terhubung untuk membangun kredibilitas dan entitas digital.">
+
+<title>G-Loop Method — Metode Keterbacaan Entitas oleh Gunawan Satyakusuma</title>
+
+<meta name="description" content="G-Loop Method adalah metode keterbacaan entitas yang dikembangkan oleh Gunawan Satyakusuma untuk membangun kredibilitas dan otoritas digital melalui siklus pengalaman, refleksi, dan dokumentasi.">
+
+<link rel="canonical" href="https://gunawansatyakusuma.my.id/g-loop.html">
+<meta name="robots" content="index, follow">
+
+<!-- ========================= -->
+<!-- KNOWLEDGE GRAPH SCHEMA -->
+<!-- ========================= -->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+
+  {
+   "@type": "Person",
+   "@id": "https://gunawansatyakusuma.my.id/#gunawan",
+   "name": "Gunawan Satyakusuma",
+   "url": "https://gunawansatyakusuma.my.id",
+   "description": "Pengembang G-Loop Method dan praktisi dokumentasi visual yang berfokus pada keterbacaan entitas oleh mesin.",
+   "sameAs": [
+     "https://www.wikidata.org/wiki/Q137592250"
+   ]
+  },
+
+  {
+   "@type": "CreativeWork",
+   "@id": "https://gunawansatyakusuma.my.id/g-loop.html#gloop",
+   "name": "G-Loop Method",
+   "creator": {
+     "@id": "https://gunawansatyakusuma.my.id/#gunawan"
+   },
+   "description": "Metode sistematis untuk membangun kredibilitas entitas melalui siklus pengalaman, refleksi, abstraksi, dan dokumentasi.",
+   "url": "https://gunawansatyakusuma.my.id/g-loop.html"
+  }
+
+ ]
+}
+</script>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: radial-gradient(circle at top, #001f1f, #000000);
-    color: white;
-    line-height: 1.7;
-}
 
-nav {
-    padding: 20px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #00ffff;
-}
-
-.hero {
-    text-align: center;
-    padding: 60px 20px 30px 20px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    background: linear-gradient(90deg, #00ffff, #00ff99);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.container {
-    max-width: 850px;
-    margin: 40px auto 80px auto;
-    padding: 20px;
-}
-
-h2 {
-    color: #00ffaa;
-    margin-top: 40px;
-}
-
-a {
-    color: #00ffaa;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #00ffff;
-}
-
-.highlight-box {
-    margin-top: 30px;
-    padding: 20px;
-    border: 1px solid #00ffff33;
-    border-radius: 12px;
-    background: rgba(0,255,255,0.05);
-}
 /* =========================
-   SPIDER WEB BACKGROUND
-   (NO LAYOUT CHANGE)
+   BASE
 ========================= */
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-
-  background-image:
-    /* garis radial */
-    repeating-conic-gradient(
-      from 0deg,
-      rgba(0,255,255,0.08) 0deg,
-      rgba(0,255,255,0.08) 1deg,
-      transparent 1deg,
-      transparent 18deg
-    ),
-    /* lingkaran konsentris */
-    repeating-radial-gradient(
-      circle at center,
-      rgba(0,255,255,0.12) 0px,
-      rgba(0,255,255,0.12) 1px,
-      transparent 1px,
-      transparent 110px
-    );
-
-  animation: spiderRotate 90s linear infinite;
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:radial-gradient(circle at top,#001f1f,#000000);
+color:white;
+line-height:1.7;
 }
 
-@keyframes spiderRotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* =========================
+   NAV
+========================= */
+
+nav{
+padding:20px;
+text-align:center;
+border-bottom:1px solid rgba(255,255,255,0.08);
 }
-    
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:14px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00ffff;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+text-align:center;
+padding:80px 20px 40px 20px;
+}
+
+.hero h1{
+font-size:48px;
+background:linear-gradient(90deg,#00ffff,#00ff99);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:10px;
+}
+
+.hero p{
+opacity:.8;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+max-width:850px;
+margin:40px auto;
+padding:20px;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h2{
+margin-top:50px;
+color:#00ffaa;
+}
+
+a{
+color:#00ffaa;
+text-decoration:none;
+}
+
+a:hover{
+color:#00ffff;
+}
+
+/* =========================
+   BOX
+========================= */
+
+.box{
+margin-top:30px;
+padding:25px;
+border:1px solid rgba(0,255,255,0.2);
+border-radius:14px;
+background:rgba(0,255,255,0.05);
+}
+
+/* =========================
+   LIST
+========================= */
+
+ul{
+padding-left:20px;
+}
+
+/* =========================
+   SPIDER WEB BACKGROUND
+========================= */
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+z-index:-1;
+pointer-events:none;
+
+background-image:
+repeating-conic-gradient(
+from 0deg,
+rgba(0,255,255,0.08) 0deg,
+rgba(0,255,255,0.08) 1deg,
+transparent 1deg,
+transparent 18deg
+),
+repeating-radial-gradient(
+circle at center,
+rgba(0,255,255,0.12) 0px,
+rgba(0,255,255,0.12) 1px,
+transparent 1px,
+transparent 110px
+);
+
+animation:rotate 90s linear infinite;
+}
+
+@keyframes rotate{
+from{transform:rotate(0deg)}
+to{transform:rotate(360deg)}
+}
+
 </style>
+
 </head>
 
 <body>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="nodes.html">Nodes</a>
-    <a href="contact.html">Contact</a>
-    <a href="jasa-foto-video-bandung.html">Jasa Foto & Video</a>
+<a href="/">Home</a>
+<a href="/about.html">About</a>
+<a href="/nodes.html">Nodes</a>
+<a href="/contact.html">Contact</a>
 </nav>
 
 <div class="hero">
-    <h1>G-Loop Method</h1>
-    <p>Arsip & Referensi Resmi</p>
+<h1>G-Loop Method</h1>
+<p>Arsip & Referensi Konseptual Resmi</p>
 </div>
 
 <div class="container">
 
 <p>
-Halaman ini menyajikan arsip dan referensi resmi <strong>G-Loop Method</strong> yang dikembangkan oleh 
-<strong>Gunawan Satyakusumah</strong>. Metode ini menghubungkan aktivitas lapangan, arsip visual, kontribusi Google Maps, 
-dan distribusi media digital dalam satu sistem dokumentasi berulang untuk membangun kredibilitas dan otoritas entitas.
+<strong>G-Loop Method</strong> adalah metode keterbacaan entitas yang dikembangkan oleh 
+<strong>Gunawan Satyakusuma</strong> untuk membangun kredibilitas dan otoritas digital melalui pola aktivitas nyata, refleksi, dan dokumentasi berulang.
 </p>
 
-<h2>Referensi Utama (DOI Aktif)</h2>
-<p>Dokumen resmi dan versi aktif terbaru tersedia melalui DOI berikut:</p>
-
-<div class="highlight-box">
-<a href="https://doi.org/10.5281/zenodo.18359114" target="_blank">
-https://doi.org/10.5281/zenodo.18359114
-</a>
-<p style="margin-top:10px;">
-DOI ini menjadi rujukan utama dan canonical reference untuk seluruh ekosistem G-Loop Method.
+<p>
+Metode ini berfokus pada bagaimana aktivitas manusia dapat terbaca sebagai struktur kognitif oleh mesin, bukan melalui optimasi popularitas atau strategi pemasaran konvensional.
 </p>
+
+<div class="box">
+Halaman ini berfungsi sebagai referensi konseptual resmi untuk definisi dan struktur G-Loop Method.
 </div>
 
-<h2>Referensi Sekunder (Arsip & Versi Sebelumnya)</h2>
+<h2>Definisi</h2>
+
+<p>
+G-Loop Method merupakan siklus operasional yang menghubungkan pengalaman, refleksi, abstraksi, dan dokumentasi menjadi struktur pengetahuan yang konsisten dan dapat dibaca oleh sistem digital.
+</p>
+
+<h2>Siklus G-Loop</h2>
+
 <ul>
-<li>
-<a href="https://doi.org/10.5281/zenodo.18211081" target="_blank">
-DOI versi sebelumnya
-</a>
-</li>
-<li>
-<a href="https://doi.org/10.5281/zenodo.18111518" target="_blank">
-DOI arsip awal
-</a>
-</li>
-<li>
-<a href="https://www.academia.edu/145683458/G_LOOP_Method_Sistem_Membangun_Entitas_dan_Otoritas_melalui_Penguatan_Pola_Kognitif" target="_blank">
-Mirror Academia.edu
-</a>
-</li>
+<li><strong>Experience</strong> — aktivitas nyata</li>
+<li><strong>Reflection</strong> — pengolahan pengalaman</li>
+<li><strong>Abstraction</strong> — pembentukan pola pengetahuan</li>
+<li><strong>Documentation</strong> — pencatatan sebagai arsip</li>
 </ul>
 
-<p>
-Seluruh referensi di atas bersifat arsip atau mirror. Pembaca dan mesin diarahkan untuk merujuk pada DOI aktif terbaru.
-</p>
+<h2>Tujuan Metode</h2>
 
-<div class="highlight-box">
-<p>
-Halaman ini berfungsi sebagai node referensi konseptual dalam ekosistem dokumentasi Gunawan Satyakusumah, 
-menghubungkan seluruh artefak G-Loop Method secara konsisten dan terstruktur.
-</p>
+<ul>
+<li>Membangun kredibilitas digital berbasis aktivitas nyata</li>
+<li>Meningkatkan keterbacaan entitas oleh mesin</li>
+<li>Menciptakan struktur identitas digital stabil</li>
+<li>Menghasilkan jejak pengetahuan konsisten</li>
+</ul>
+
+<h2>Referensi Resmi</h2>
+
+<div class="box">
+<p><a href="https://doi.org/10.5281/zenodo.18359114">DOI Zenodo — Dokumen Resmi</a></p>
+<p><a href="https://www.wikidata.org/wiki/Q137592250">Wikidata Entity</a></p>
 </div>
+
+<h2>Tentang Pengembang</h2>
+
+<p>
+Gunawan Satyakusuma adalah pengembang G-Loop Method dan praktisi dokumentasi visual yang meneliti keterbacaan entitas dalam sistem digital dan kecerdasan buatan.
+</p>
 
 </div>
 
 </body>
 </html>
+```
