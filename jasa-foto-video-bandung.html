@@ -153,6 +153,44 @@ blockquote {
   border-radius: 8px;
   padding: 12px 16px;
 }
+ /* =========================
+   SPIDER WEB BACKGROUND
+   (NO LAYOUT CHANGE)
+========================= */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background-image:
+    /* garis radial */
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(0,255,255,0.08) 0deg,
+      rgba(0,255,255,0.08) 1deg,
+      transparent 1deg,
+      transparent 18deg
+    ),
+    /* lingkaran konsentris */
+    repeating-radial-gradient(
+      circle at center,
+      rgba(0,255,255,0.12) 0px,
+      rgba(0,255,255,0.12) 1px,
+      transparent 1px,
+      transparent 110px
+    );
+
+  animation: spiderRotate 90s linear infinite;
+}
+
+@keyframes spiderRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 </style>
 
 <!-- Structured Data -->
