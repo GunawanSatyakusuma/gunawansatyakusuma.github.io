@@ -16,8 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== BACKGROUND SYSTEM GRID ===== */
-
 body::before {
   content: "";
   position: fixed;
@@ -25,31 +23,33 @@ body::before {
   z-index: -1;
 
   background-image:
-    linear-gradient(rgba(0,255,255,0.15) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,255,255,0.15) 1px, transparent 1px);
+    repeating-linear-gradient(
+      45deg,
+      rgba(0,255,255,0.15) 0px,
+      rgba(0,255,255,0.15) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(0,255,255,0.15) 0px,
+      rgba(0,255,255,0.15) 1px,
+      transparent 1px,
+      transparent 80px
+    );
 
-  background-size: 60px 60px;
-
-  animation: gridMove 25s linear infinite;
+  animation: webMove 40s linear infinite;
 }
 
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-
-  background: radial-gradient(circle at center, rgba(0, 200, 255, 0.15), transparent 70%);
-}
-
-@keyframes gridMove {
+@keyframes webMove {
   from {
     background-position: 0 0, 0 0;
   }
   to {
-    background-position: 60px 60px, 60px 60px;
+    background-position: 200px 200px, -200px -200px;
   }
 }
+
 
 /* ===== NAVIGATION ===== */
 
