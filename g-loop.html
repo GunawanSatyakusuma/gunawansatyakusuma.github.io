@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -188,6 +187,38 @@ from{transform:rotate(0deg)}
 to{transform:rotate(360deg)}
 }
 
+/* ===== BACKGROUND IMAGE LAYER ===== */
+
+body::marker {
+  content: "";
+}
+
+body::selection {
+  background: #00ffff33;
+}
+
+/* Image layer (paling belakang) */
+body::before {
+  /* tidak diubah */
+}
+
+/* Tambahan layer baru */
+body::after {
+  /* tidak diubah */
+}
+
+/* Layer gambar baru */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -4;
+
+  background: url("ai-blog-960x536.jpg") center/cover no-repeat;
+  opacity: 0.15; /* bikin tipis */
+  filter: blur(2px);
+}
+ 
 </style>
 
 </head>
@@ -262,4 +293,4 @@ Gunawan Satyakusuma adalah pengembang G-Loop Method dan praktisi dokumentasi vis
 
 </body>
 </html>
-```
+
