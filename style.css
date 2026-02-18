@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+/* =========================
+   BODY BASE
+========================= */
+
 body {
   margin: 0;
   line-height: 1.6;
@@ -16,12 +20,17 @@ body {
   overflow-x: hidden;
 }
 
-/* Layer utama orbit */
+/* =========================
+   BACKGROUND SYSTEM
+========================= */
+
+/* Orbit layer */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -2;
+  pointer-events: none;
 
   background:
     repeating-radial-gradient(
@@ -48,24 +57,44 @@ body::after {
   position: fixed;
   inset: 0;
   z-index: -3;
+  pointer-events: none;
 
   background: radial-gradient(circle at center, rgba(0,200,255,0.15), transparent 70%);
 }
 
-@keyframes rotateSystem {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Background image layer */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -4;
+
+  background: url("ai-blog-960x536.jpg") center/cover no-repeat;
+  opacity: 0.15;
+  filter: blur(2px);
 }
 
+@keyframes rotateSystem {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 
-/* ===== NAVIGATION ===== */
+/* =========================
+   CONTAINER (SAMAKAN LEBAR)
+========================= */
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
 
 nav {
-  padding: 25px 20px;
+  padding: 25px 0;
 }
 
 nav a {
@@ -73,7 +102,6 @@ nav a {
   text-decoration: none;
   margin: 0 18px;
   font-size: 14px;
-  letter-spacing: 0.5px;
   transition: 0.3s;
 }
 
@@ -81,11 +109,12 @@ nav a:hover {
   color: #00ffff;
 }
 
-/* ===== HERO ===== */
+/* =========================
+   HERO
+========================= */
 
 .hero {
   margin-top: 100px;
-  padding: 0 20px;
 }
 
 h1 {
@@ -114,7 +143,9 @@ h1 {
   color: #00ffaa;
 }
 
-/* ===== BUTTON ===== */
+/* =========================
+   BUTTON
+========================= */
 
 .btn {
   display: inline-block;
@@ -134,13 +165,16 @@ h1 {
   box-shadow: 0 0 20px rgba(0,255,255,0.6);
 }
 
-/* ===== SECTION ===== */
+/* =========================
+   SECTION (CARD STYLE)
+========================= */
 
 .section {
-  margin-top: 120px;
-  padding: 60px 20px;
-  background: rgba(10, 10, 10, 0.6);
+  margin: 120px auto 0 auto;
+  padding: 40px 32px;
+  background: rgba(20,20,20,0.8);
   backdrop-filter: blur(6px);
+  border-radius: 16px;
 }
 
 .section h2 {
@@ -151,50 +185,19 @@ h1 {
 }
 
 .section p {
-  max-width: 720px;
-  margin: auto;
   color: #ccc;
   line-height: 1.7;
   font-size: 16px;
 }
 
-/* ===== FOOTER ===== */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   margin-top: 100px;
-  padding: 40px 20px;
+  padding: 40px 0;
   font-size: 14px;
   color: #666;
 }
 
-/* ===== BACKGROUND IMAGE LAYER ===== */
-
-body::marker {
-  content: "";
-}
-
-body::selection {
-  background: #00ffff33;
-}
-
-/* Image layer (paling belakang) */
-body::before {
-  /* tidak diubah */
-}
-
-/* Tambahan layer baru */
-body::after {
-  /* tidak diubah */
-}
-
-/* Layer gambar baru */
-html::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -4;
-
-  background: url("ai-blog-960x536.jpg") center/cover no-repeat;
-  opacity: 0.15; /* bikin tipis */
-  filter: blur(2px);
-}
