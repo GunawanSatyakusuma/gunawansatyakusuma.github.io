@@ -172,9 +172,9 @@ h1 {
 .section {
   margin: 120px auto 0 auto;
   padding: 40px 32px;
-  background: rgba(20,20,20,0.8);
-  backdrop-filter: blur(6px);
-  border-radius: 16px;
+  background: transparent; /* hilangkan warna */
+  backdrop-filter: none;   /* hilangkan blur */
+  border-radius: 0;        /* opsional: hilangkan sudut card */
 }
 
 .section h2 {
