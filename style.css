@@ -138,9 +138,9 @@ h1 {
 }
 
 .highlight-list li {
-  margin: 12px 0;
+  margin: 20px 0;
   font-size: 18px;
-  color: #00ffaa;
+  color: #ffffff;
 }
 
 /* =========================
@@ -179,7 +179,7 @@ h1 {
 
 .section h2 {
   color: #00ffff;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-weight: 300;
   letter-spacing: 1px;
 }
