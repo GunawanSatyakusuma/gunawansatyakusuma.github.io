@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAQ Gunawan Satyakusuma | Jasa Dokumentasi Foto Video Bandung</title>
 <meta name="description" content="Pertanyaan umum tentang jasa dokumentasi foto dan video Gunawan Satyakusuma di Bandung, layanan dokumentasi event, corporate, dan produksi visual.">
-
+<link rel="stylesheet" href="style.css"> 
 <!-- SCHEMA FAQ JSON-LD -->
 <script type="application/ld+json">
 {
@@ -32,156 +32,16 @@
 }
 </script>
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: radial-gradient(circle at top, #001f1f, #000000);
-    color: white;
-}
-
-nav {
-    padding: 20px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #00ffff;
-}
-
-.hero {
-    text-align: center;
-    padding: 60px 20px 30px 20px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    background: linear-gradient(90deg, #00ffff, #00ff99);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 40px auto 80px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    background: rgba(0,255,255,0.05);
-    border: 1px solid #00ffff22;
-    padding: 25px;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border: 1px solid #00ffff55;
-    box-shadow: 0 0 20px rgba(0,255,255,0.2);
-}
-
-.card h3 {
-    margin-top: 0;
-    color: #00ffaa;
-}
-
-.card p {
-    color: #cccccc;
-    font-size: 15px;
-    line-height: 1.6;
-}
-/* =========================
-   SPIDER WEB BACKGROUND
-   (NO LAYOUT CHANGE)
-========================= */
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-
-  background-image:
-    /* garis radial */
-    repeating-conic-gradient(
-      from 0deg,
-      rgba(0,255,255,0.08) 0deg,
-      rgba(0,255,255,0.08) 1deg,
-      transparent 1deg,
-      transparent 18deg
-    ),
-    /* lingkaran konsentris */
-    repeating-radial-gradient(
-      circle at center,
-      rgba(0,255,255,0.12) 0px,
-      rgba(0,255,255,0.12) 1px,
-      transparent 1px,
-      transparent 110px
-    );
-
-  animation: spiderRotate 90s linear infinite;
-}
-
-@keyframes spiderRotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* ===== BACKGROUND IMAGE LAYER ===== */
-
-body::marker {
-  content: "";
-}
-
-body::selection {
-  background: #00ffff33;
-}
-
-/* Image layer (paling belakang) */
-body::before {
-  /* tidak diubah */
-}
-
-/* Tambahan layer baru */
-body::after {
-  /* tidak diubah */
-}
-
-/* Layer gambar baru */
-html::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -4;
-
-  background: url("ai-blog-960x536.jpg") center/cover no-repeat;
-  opacity: 0.15; /* bikin tipis */
-  filter: blur(2px);
-}
-    
-</style>
 </head>
 
 <body>
-<div class="card">
+<div class="container hero">
 <h1>FAQ — Gunawan Satyakusuma | Jasa Dokumentasi Foto Video Bandung</h1>
 
 <p>Halaman ini berisi pertanyaan umum mengenai layanan dokumentasi foto dan video, jenis layanan, area kerja, dan proses pemesanan jasa dokumentasi profesional.</p>
 
-<!-- =================== IDENTITAS =================== -->
+<!-- =================== IDENTITAS =================== --> 
+<div class="container section">    
 <h2>Tentang Gunawan Satyakusuma</h2>
 
 <div class="faq-item"><strong>1. Siapa Gunawan Satyakusuma?</strong>
