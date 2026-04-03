@@ -141,6 +141,56 @@ html::before {
   opacity: 0.15; /* bikin tipis */
   filter: blur(2px);
 }
+
+.center {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ffff;
+    text-decoration: none;
+    border: 1px solid #00ffff55;
+    border-radius: 12px;
+    background: rgba(0, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ffff33;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover efek neon */
+.button:hover {
+    color: #000;
+    background: linear-gradient(90deg, #00ffff, #00ff99);
+    box-shadow: 0 0 20px #00ffffaa, 0 0 40px #00ff99aa;
+    transform: scale(1.05);
+}
+
+/* Animasi shine neon */
+.button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, #00ffff55, transparent);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.button:hover::before {
+    opacity: 1;
+    animation: shine 1s linear;
+}
+
+@keyframes shine {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+}
     
 </style>
 </head>
@@ -176,7 +226,11 @@ html::before {
            rel="noopener noreferrer">
            📷 Instagram – @satya_kusumah
         </a>
-        
+        <div class="center">
+    <a class="button" href="https://wa.me/6289515232062" target="_blank">
+      💬 Mulai Diskusi Awal
+    </a>
+    </div>
 
         <p style="margin-top:25px; font-size:14px; color:#888;">
         Respons biasanya dalam 24–48 jam.
