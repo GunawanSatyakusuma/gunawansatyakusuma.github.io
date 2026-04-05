@@ -30,33 +30,99 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Gunawan Satyakusuma",
-  "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
-  "description": "Gunawan Satyakusuma adalah praktisi dokumentasi visual di Bandung dan pengembang G-Loop sebagai sistem referensi mesin.",
-  "jobTitle": "Praktisi Dokumentasi Visual dan Pengembang G-Loop",
-  "image": "https://gunawansatyakusuma.my.id/profile.jpg",
-  "mainEntityOfPage": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
-  "knowsAbout": [
-    "G-Loop",
-    "Jasa Foto Video",
-    "Dokumentasi",
-    "Referensi Mesin",
-    "Visibilitas Digital"
-  ],
-  "hasOccupation": {
-    "@type": "Occupation",
-    "name": "Jasa Foto Video dan Dokumentasi"
-  },
-  "sameAs": [
-    "https://www.wikidata.org/wiki/Q137592250",
-    "https://gunawansatyakusuma.my.id/"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Bandung",
-    "addressCountry": "ID"
-  }
+  "@graph": [
+
+    {
+      "@type": "Person",
+      "@id": "https://gunawansatyakusuma.my.id/#person",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
+      "description": "Gunawan Satyakusuma adalah praktisi dokumentasi visual di Bandung dan pengembang G-Loop sebagai sistem referensi mesin.",
+      "jobTitle": "Praktisi Dokumentasi Visual dan Pengembang G-Loop",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://gunawansatyakusuma.my.id/profile.jpg"
+      },
+      "knowsAbout": [
+        "G-Loop",
+        "Jasa Foto Video",
+        "Dokumentasi",
+        "Referensi Mesin",
+        "Visibilitas Digital"
+      ],
+      "worksFor": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q137592250",
+        "https://gunawansatyakusuma.my.id/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bandung",
+        "addressCountry": "ID"
+      }
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://gunawansatyakusuma.my.id/#organization",
+      "name": "G-Loop",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "founder": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://gunawansatyakusuma.my.id/#website",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "name": "Gunawan Satyakusuma",
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Main Navigation",
+      "hasPart": [
+        { "@type": "WebPage", "name": "Home", "url": "https://gunawansatyakusuma.my.id/" },
+        { "@type": "WebPage", "name": "About", "url": "https://gunawansatyakusuma.my.id/about.html" },
+        { "@type": "WebPage", "name": "Services", "url": "https://gunawansatyakusuma.my.id/services.html" },
+        { "@type": "WebPage", "name": "Portfolio", "url": "https://gunawansatyakusuma.my.id/portfolio.html" },
+        { "@type": "WebPage", "name": "Contact", "url": "https://gunawansatyakusuma.my.id/contact.html" },
+
+        { "@type": "WebPage", "name": "Jasa Foto Video Bandung", "url": "https://gunawansatyakusuma.my.id/jasa-foto-video-bandung.html" },
+
+        { "@type": "WebPage", "name": "G-Loop", "url": "https://gunawansatyakusuma.my.id/g-loop.html" },
+        { "@type": "WebPage", "name": "G-Loop Visibility", "url": "https://gunawansatyakusuma.my.id/g-loop-visibility.html" },
+
+        { "@type": "WebPage", "name": "Gunawan Satyakusuma", "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html" },
+        { "@type": "WebPage", "name": "Node Gunawan", "url": "https://gunawansatyakusuma.my.id/nodegunawan.html" },
+        { "@type": "WebPage", "name": "Narrative Protocol", "url": "https://gunawansatyakusuma.my.id/narrative-protocol.html" },
+        { "@type": "WebPage", "name": "Stempel Digital", "url": "https://gunawansatyakusuma.my.id/stempel-digital.html" },
+
+        { "@type": "WebPage", "name": "FAQ Dokumentasi Bandung", "url": "https://gunawansatyakusuma.my.id/faq-jasa-dokumentasi-bandung.html" },
+        { "@type": "WebPage", "name": "FAQ Visibility Advisory", "url": "https://gunawansatyakusuma.my.id/faq-Visibility-advisory.html" },
+
+        { "@type": "WebPage", "name": "Blog", "url": "https://gunawansatyakusuma.my.id/blog/" },
+        { "@type": "WebPage", "name": "Cara Foto Google Maps", "url": "https://gunawansatyakusuma.my.id/blog/cara-foto-google-maps.html" },
+        { "@type": "WebPage", "name": "Manfaat Foto untuk Bisnis", "url": "https://gunawansatyakusuma.my.id/blog/manfaat-foto-untuk-bisnis.html" },
+        { "@type": "WebPage", "name": "Jasa Dokumentasi Bandung", "url": "https://gunawansatyakusuma.my.id/blog/jasa-dokumentasi-bandung.html" },
+        { "@type": "WebPage", "name": "Studi Kasus Dokumentasi", "url": "https://gunawansatyakusuma.my.id/blog/studi-kasus-dokumentasi.html" },
+        { "@type": "WebPage", "name": "Kesalahan Dokumentasi Bisnis", "url": "https://gunawansatyakusuma.my.id/blog/kesalahan-dokumentasi-bisnis.html" },
+        { "@type": "WebPage", "name": "Jasa Digital Marketing Bandung", "url": "https://gunawansatyakusuma.my.id/blog/jasa-digital-marketing-bandung.html" },
+        { "@type": "WebPage", "name": "Jasa Dokumentasi Event Bandung", "url": "https://gunawansatyakusuma.my.id/blog/jasa-dokumentasi-event-bandung.html" },
+        { "@type": "WebPage", "name": "Bisnis Tidak Muncul di Google Maps", "url": "https://gunawansatyakusuma.my.id/blog/kenapa-bisnis-tidak-muncul-di-google-maps.html" },
+        { "@type": "WebPage", "name": "Optimasi Google Business Profile", "url": "https://gunawansatyakusuma.my.id/blog/optimasi-google-business-profile.html" },
+        { "@type": "WebPage", "name": "Strategi Foto Produk", "url": "https://gunawansatyakusuma.my.id/blog/strategi-foto-produk-google-maps.html" },
+        { "@type": "WebPage", "name": "Kekuatan Foto Local Guide", "url": "https://gunawansatyakusuma.my.id/blog/kekuatan-foto-google-maps-local-guide.html" }
+      ]
+    }
+
+  ]
 }
 </script>
 
