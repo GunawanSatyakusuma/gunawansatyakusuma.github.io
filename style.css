@@ -181,6 +181,17 @@ p {
   color: inherit;
 }
 
+.highlight-list li {
+  transition: all 0.3s ease;
+  display: inline-block; /* penting biar bisa scale */
+}
+
+.highlight-list li:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff; 
+}
+
 /* =========================
    DIVIDER
 ========================= */
