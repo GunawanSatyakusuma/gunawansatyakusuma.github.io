@@ -143,6 +143,14 @@ h2 {
   color: #00ffff;
   font-weight: 400;
   letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+h2:hover {
+  color: #ffffff;          /* warna berubah */
+  transform: scale(1.2);   /* membesar */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; 
 }
 
 p {
