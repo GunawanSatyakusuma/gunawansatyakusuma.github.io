@@ -51,9 +51,17 @@ a {
   transition: 0.3s ease;
 }
 
-a:visited { color: #00ffff; }
-a:hover { color: #ffffff; }
-a:active { color: #00ffff; }
+a:visited {
+  color: #00ffff;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+a:active {
+  color: #00ffff;
+}
 
 /* =========================
    BACKGROUND SYSTEM
