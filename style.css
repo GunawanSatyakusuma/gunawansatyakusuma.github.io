@@ -10,14 +10,34 @@ html {
   scroll-behavior: smooth;
 }
 
+/* PENTING: tambahkan ini */
 body {
   margin: 0;
   line-height: 1.6;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: #ffffff;
   text-align: center;
   background-color: #070b14;
   overflow-x: hidden;
+
+  position: relative;   /* WAJIB */
+  z-index: 10;          /* WAJIB */
+}
+
+/* =========================
+   CARD STYLE
+========================= */
+
+.container {
+  max-width: 720px;
+  margin: 24px auto;   /* sedikit dirapikan */
+  padding: 24px;
+
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(4px);
+
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
 /* =========================
@@ -27,7 +47,7 @@ body {
 a {
   color: #00ffff;
   text-decoration: none;
-  transition: 0.25s ease;
+  transition: 0.3s ease;
 }
 
 a:hover {
@@ -35,13 +55,60 @@ a:hover {
 }
 
 /* =========================
-   CONTAINER (LEBIH PADAT)
+   BACKGROUND SYSTEM (FIX)
 ========================= */
 
-.container {
-  max-width: 720px;
-  margin: 20px auto;     /* sebelumnya kosong */
-  padding: 0 20px;
+/* GAMBAR PALING BELAKANG */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0; /* dari -4 jadi 0 */
+  background: url("ai-blog-960x536.jpg") center/cover no-repeat;
+  opacity: 0.15;
+  filter: blur(2px);
+}
+
+/* GLOW */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1; /* dari -3 jadi 1 */
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(0,200,255,0.15), transparent 70%);
+}
+
+/* GRID ANIMASI */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 2; /* dari -2 jadi 2 */
+  pointer-events: none;
+
+  background:
+    repeating-radial-gradient(
+      circle at center,
+      rgba(0,255,255,0.12) 0px,
+      rgba(0,255,255,0.12) 1px,
+      transparent 1px,
+      transparent 120px
+    ),
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(0,255,255,0.08) 0deg,
+      rgba(0,255,255,0.08) 1deg,
+      transparent 1deg,
+      transparent 30deg
+    );
+
+  animation: rotateSystem 90s linear infinite;
+}
+
+@keyframes rotateSystem {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* =========================
@@ -49,13 +116,13 @@ a:hover {
 ========================= */
 
 nav {
-  padding: 16px 0; /* sebelumnya 25px */
+  padding: 16px 0;
 }
 
 nav a {
-  margin: 0 12px; /* sebelumnya 18px */
+  margin: 0 12px;
   font-size: 14px;
-  color: #cccccc;
+  color: #aaa;
 }
 
 nav a:hover {
@@ -63,70 +130,47 @@ nav a:hover {
 }
 
 /* =========================
-   TYPOGRAPHY (FIX SPACING)
+   TYPOGRAPHY
 ========================= */
 
-/* reset margin default */
 h1, h2, p {
   margin: 0;
 }
 
 h1 {
-  font-size: 34px;
-  margin-bottom: 12px;
-
-  background: linear-gradient(90deg, #00ffff, #00ff99);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 22px;
-  margin-top: 28px;      /* sebelumnya 48px */
-  margin-bottom: 12px;   /* sebelumnya 20px */
-
-  color: #00ffff;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-
-  transition: 0.25s ease;
-}
-
-h2:hover {
-  color: #ffffff;
-  transform: scale(1.08); /* sebelumnya 1.2 (terlalu besar) */
-  text-shadow: 0 0 10px #00ffff;
+  font-size: 20px;
+  margin-top: 24px; /* lebih rapi */
+  border-left: 4px solid #00ffff;
+  padding-left: 12px;
+  text-align: left;
 }
 
 p {
   font-size: 15px;
-  color: #cccccc;
-  margin-top: 10px; /* sebelumnya 18px */
+  color: #ccc;
+  margin-top: 10px;
+  text-align: left;
 }
 
 /* =========================
-   LIST SYSTEM
+   LIST
 ========================= */
 
 .highlight-list {
   list-style: none;
   padding: 0;
-  margin: 18px 0; /* sebelumnya 30px */
+  margin: 16px 0;
+  text-align: left;
 }
 
 .highlight-list li {
-  margin: 10px 0; /* sebelumnya 20px */
-  font-size: 17px;
-  font-weight: 500;
-  color: #ffffff;
-
-  transition: 0.25s ease;
-  transform-origin: left;
-}
-
-.highlight-list li:hover {
-  transform: scale(1.04);
-  text-shadow: 0 0 8px #00ffff;
+  margin: 10px 0;
+  font-size: 16px;
 }
 
 /* =========================
@@ -135,17 +179,8 @@ p {
 
 .divider {
   height: 1px;
-  background: rgba(255,255,255,0.1);
-  margin: 24px 0; /* sebelumnya 40px */
-}
-
-/* =========================
-   SECTION (PALING NGARUH)
-========================= */
-
-.section {
-  margin: 60px auto 0 auto;  /* sebelumnya 120px ❌ */
-  padding: 24px 20px;        /* sebelumnya 40px 32px */
+  background: #333;
+  margin: 20px 0;
 }
 
 /* =========================
@@ -154,21 +189,17 @@ p {
 
 .btn {
   display: inline-block;
-  margin-top: 14px; /* sebelumnya 20px */
-  padding: 10px 24px;
-
-  border: 1px solid #00ffff;
-  color: #00ffff;
-  border-radius: 24px;
-  font-size: 14px;
-
-  transition: 0.25s ease;
+  margin-top: 14px;
+  padding: 12px 28px;
+  border-radius: 12px;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #00ffff;
-  color: #000000;
-  box-shadow: 0 0 16px rgba(0,255,255,0.6);
+  background: #00cccc;
 }
 
 /* =========================
@@ -176,20 +207,7 @@ p {
 ========================= */
 
 footer {
-  margin-top: 40px; /* sebelumnya 100px */
-  padding: 24px 0;
-  font-size: 13px;
-  color: #666666;
-}
-
-/* =========================
-   PROFILE IMAGE
-========================= */
-
-.profile-img {
-  width: 140px; /* sebelumnya 180px */
-  border-radius: 50%;
-  margin-top: 16px;
-  border: 2px solid #00ffff;
-  box-shadow: 0 0 16px rgba(0, 255, 255, 0.4);
+  margin-top: 32px;
+  font-size: 12px;
+  color: #aaa;
 }
