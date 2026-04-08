@@ -24,9 +24,9 @@ body {
    HERO
 ========================= */
 
-.hero{
-text-align:center;
-padding:80px 20px 40px 20px;
+.hero {
+  text-align: center;
+  padding: 60px 20px 30px 20px; /* top 60px, bottom 30px */
 }
 
 .hero h1{
