@@ -21,6 +21,27 @@ body {
 }
 
 /* =========================
+   HERO
+========================= */
+
+.hero{
+text-align:center;
+padding:80px 20px 40px 20px;
+}
+
+.hero h1{
+font-size:48px;
+background:linear-gradient(90deg,#00ffff,#00ff99);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:10px;
+}
+
+.hero p{
+opacity:.8;
+}
+
+/* =========================
    CONTAINER (LEBIH RAPAT)
 ========================= */
 
