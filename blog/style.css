@@ -21,13 +21,13 @@ body {
 }
 
 /* =========================
-   CARD STYLE (BIAR KAYAK ATAS)
+   CONTAINER (LEBIH RAPAT)
 ========================= */
 
 .container {
   max-width: 720px;
-  margin: 40px auto;
-  padding: 32px;
+  margin: 24px auto;   /* sebelumnya 40px */
+  padding: 24px;       /* sebelumnya 32px */
   
   background: rgba(20, 20, 20, 0.75);
   backdrop-filter: blur(4px);
@@ -37,103 +37,22 @@ body {
 }
 
 /* =========================
-   GLOBAL LINK SYSTEM
+   TYPOGRAPHY (FIX SPACING)
 ========================= */
 
-a {
-  color: #00ffff;
-  text-decoration: none;
-  transition: 0.3s ease;
+/* RESET margin default biar konsisten */
+h1, h2, p {
+  margin: 0;
 }
-
-a:hover {
-  color: #ffffff;
-}
-
-/* =========================
-   BACKGROUND SYSTEM
-========================= */
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  pointer-events: none;
-
-  background:
-    repeating-radial-gradient(
-      circle at center,
-      rgba(0,255,255,0.12) 0px,
-      rgba(0,255,255,0.12) 1px,
-      transparent 1px,
-      transparent 120px
-    ),
-    repeating-conic-gradient(
-      from 0deg,
-      rgba(0,255,255,0.08) 0deg,
-      rgba(0,255,255,0.08) 1deg,
-      transparent 1deg,
-      transparent 30deg
-    );
-
-  animation: rotateSystem 90s linear infinite;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -3;
-  pointer-events: none;
-  background: radial-gradient(circle at center, rgba(0,200,255,0.15), transparent 70%);
-}
-
-html::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -4;
-  background: url("ai-blog-960x536.jpg") center/cover no-repeat;
-  opacity: 0.15;
-  filter: blur(2px);
-}
-
-@keyframes rotateSystem {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* =========================
-   NAVIGATION
-========================= */
-
-nav {
-  padding: 20px 0;
-}
-
-nav a {
-  margin: 0 14px;
-  font-size: 14px;
-  color: #aaa;
-}
-
-nav a:hover {
-  color: #00ffff;
-}
-
-/* =========================
-   TYPOGRAPHY
-========================= */
 
 h1 {
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 12px; /* lebih balance */
 }
 
 h2 {
   font-size: 20px;
-  margin-top: 32px;
+  margin-top: 20px;    /* sebelumnya 32px (terlalu jauh) */
   border-left: 4px solid #00ffff;
   padding-left: 12px;
   text-align: left;
@@ -142,7 +61,7 @@ h2 {
 p {
   font-size: 15px;
   color: #ccc;
-  margin: 12px 0;
+  margin-top: 10px;    /* sebelumnya 12px */
   text-align: left;
 }
 
@@ -153,12 +72,12 @@ p {
 .highlight-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 16px 0; /* lebih rapat */
   text-align: left;
 }
 
 .highlight-list li {
-  margin: 12px 0;
+  margin: 8px 0; /* sebelumnya 12px */
   font-size: 16px;
 }
 
@@ -169,7 +88,7 @@ p {
 .divider {
   height: 1px;
   background: #333;
-  margin: 28px 0;
+  margin: 20px 0; /* sebelumnya 28px */
 }
 
 /* =========================
@@ -178,7 +97,7 @@ p {
 
 .btn {
   display: inline-block;
-  margin-top: 18px;
+  margin-top: 14px; /* lebih rapat */
   padding: 12px 28px;
   border-radius: 12px;
   background: #00ffff;
@@ -196,7 +115,7 @@ p {
 ========================= */
 
 footer {
-  margin-top: 40px;
+  margin-top: 24px; /* sebelumnya 40px */
   font-size: 12px;
   color: #aaa;
 }
