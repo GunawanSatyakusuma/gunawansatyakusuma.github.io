@@ -93,12 +93,10 @@ h1 {
   margin-bottom: 12px; /* lebih balance */
 }
 
-h2 {
-  font-size: 20px;
-  margin-top: 20px;    /* sebelumnya 32px (terlalu jauh) */
-  border-left: 4px solid #00ffff;
-  padding-left: 12px;
-  text-align: left;
+h2:hover {
+  color: #ffffff;          /* warna berubah */
+  transform: scale(1.2);   /* membesar */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; 
 }
 
 p {
