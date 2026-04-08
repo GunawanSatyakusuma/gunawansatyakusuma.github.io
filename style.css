@@ -161,11 +161,10 @@ h1 {
   margin-bottom: 12px;
 }
 
-h2 {
-  font-size: 20px;
-  margin-top: 20px;
-  border-left: none;          /* ❌ hilangin garis kiri biar clean center */
-  padding-left: 0;
+h2:hover {
+  color: #ffffff;          /* warna berubah */
+  transform: scale(1.2);   /* membesar */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; 
 }
 
 p {
