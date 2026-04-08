@@ -24,21 +24,21 @@ body {
    HERO
 ========================= */
 
-.hero{
-text-align:center;
-padding:80px 20px 40px 20px;
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px 20px;
 }
 
-.hero h1{
-font-size:48px;
-background:linear-gradient(90deg,#00ffff,#00ff99);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-margin-bottom:10px;
+.hero h1 {
+  font-size: 48px;
+  background: linear-gradient(90deg,#00ffff,#00ff99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
 }
 
-.hero p{
-opacity:.8;
+.hero p {
+  opacity: .8;
 }
 
 /* =========================
@@ -51,17 +51,9 @@ a {
   transition: 0.3s ease;
 }
 
-a:visited {
-  color: #00ffff;
-}
-
-a:hover {
-  color: #ffffff;
-}
-
-a:active {
-  color: #00ffff;
-}
+a:visited { color: #00ffff; }
+a:hover { color: #ffffff; }
+a:active { color: #00ffff; }
 
 /* =========================
    BACKGROUND SYSTEM
@@ -125,6 +117,7 @@ html::before {
   max-width: 720px;
   margin: auto;
   padding: 0 20px;
+  text-align: center;
 }
 
 /* =========================
@@ -133,6 +126,7 @@ html::before {
 
 nav {
   padding: 25px 0;
+  text-align: center;
 }
 
 nav a {
@@ -146,32 +140,30 @@ nav a:hover {
 }
 
 /* =========================
-   TYPOGRAPHY (FIX SPACING)
+   TYPOGRAPHY
 ========================= */
 
-/* RESET margin default biar konsisten */
 h1, h2, p {
   margin: 0;
+  text-align: center; /* 🔥 paksa semua center */
 }
 
 h1 {
   font-size: 30px;
-  margin-bottom: 12px; /* lebih balance */
+  margin-bottom: 12px;
 }
 
 h2 {
   font-size: 20px;
-  margin-top: 20px;    /* sebelumnya 32px (terlalu jauh) */
-  border-left: 4px solid #00ffff;
-  padding-left: 12px;
-  text-align: left;
+  margin-top: 20px;
+  border-left: none;          /* ❌ hilangin garis kiri biar clean center */
+  padding-left: 0;
 }
 
 p {
   font-size: 15px;
   color: #ccc;
-  margin-top: 10px;    /* sebelumnya 12px */
-  text-align: left;
+  margin-top: 10px;
 }
 
 /* =========================
@@ -181,12 +173,12 @@ p {
 .highlight-list {
   list-style: none;
   padding: 0;
-  margin: 16px 0; /* lebih rapat */
-  text-align: left;
+  margin: 16px 0;
+  text-align: center;
 }
 
 .highlight-list li {
-  margin: 8px 0; /* sebelumnya 12px */
+  margin: 8px 0;
   font-size: 16px;
 }
 
@@ -197,7 +189,8 @@ p {
 .divider {
   height: 1px;
   background: rgba(255,255,255,0.1);
-  margin: 40px 0;
+  margin: 40px auto;
+  width: 60%;
 }
 
 /* =========================
@@ -207,7 +200,7 @@ p {
 .section {
   margin: 120px auto 0 auto;
   padding: 40px 32px;
-  background: transparent;
+  text-align: center;
 }
 
 /* =========================
@@ -240,16 +233,17 @@ footer {
   padding: 40px 0;
   font-size: 14px;
   color: #666666;
+  text-align: center;
 }
 
- /* =========================
+/* =========================
    IMAGE
 ========================= */
 
 .profile-img {
-      width: 180px;
-      border-radius: 50%;
-      margin-top: 20px;
-      border: 2px solid #00ffff;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
-    }
+  width: 180px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
