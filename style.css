@@ -199,9 +199,9 @@ p {
   text-align: center;
 }
 
-.highlight-list li {
-  margin: 8px 0;
-  font-size: 16px;
+.highlight-list li::before {
+  content: "• ";
+  color: #00ffff;
 }
 
 /* =========================
