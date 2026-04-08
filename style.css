@@ -125,69 +125,50 @@ nav a:hover {
 }
 
 /* =========================
-   TYPOGRAPHY SYSTEM
+   TYPOGRAPHY (FIX SPACING)
 ========================= */
 
+/* RESET margin default biar konsisten */
+h1, h2, p {
+  margin: 0;
+}
+
 h1 {
-  font-size: 52px;
-  margin-bottom: 16px;
-  background: linear-gradient(90deg, #00ffff, #00ff99);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  margin-bottom: 12px; /* lebih balance */
 }
 
 h2 {
-  font-size: 24px;
-  margin-top: 48px;
-  margin-bottom: 20px;
-  color: #00ffff;
-  font-weight: 400;
-  letter-spacing: 1px;
-
-  transition: all 0.3s ease;
-}
-
-h2:hover {
-  color: #ffffff;          /* warna berubah */
-  transform: scale(1.2);   /* membesar */
-  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; 
+  font-size: 20px;
+  margin-top: 20px;    /* sebelumnya 32px (terlalu jauh) */
+  border-left: 4px solid #00ffff;
+  padding-left: 12px;
+  text-align: left;
 }
 
 p {
-  font-size: 16px;
-  color: #cccccc;
-  margin: 18px 0;
+  font-size: 15px;
+  color: #ccc;
+  margin-top: 10px;    /* sebelumnya 12px */
+  text-align: left;
 }
 
 /* =========================
-   LIST SYSTEM
+   LIST
 ========================= */
 
 .highlight-list {
   list-style: none;
   padding: 0;
-  margin: 30px 0;
+  margin: 16px 0; /* lebih rapat */
+  text-align: left;
 }
 
 .highlight-list li {
-  margin: 20px 0;
-  font-size: 20px;
-  font-weight: 500;
-  color: #ffffff;
-  letter-spacing: 0.3px;
-  transition: all 0.3s ease;
-  transform-origin: left; /* biar membesar ke kanan */
+  margin: 8px 0; /* sebelumnya 12px */
+  font-size: 16px;
 }
 
-.highlight-list li a {
-  color: inherit;
-}
-
-.highlight-list li:hover {
-  color: #ffffff;
-  transform: scale(1.05);
-  text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff; 
-}
 /* =========================
    DIVIDER
 ========================= */
