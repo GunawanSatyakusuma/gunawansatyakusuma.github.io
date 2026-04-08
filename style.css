@@ -151,22 +151,37 @@ nav a:hover {
    TYPOGRAPHY
 ========================= */
 
-h1, h2, p {
+h1, h2, h3, p {
   margin: 0;
-  text-align: center; /* 🔥 paksa semua center */
+  text-align: center;
 }
 
+/* H1 */
 h1 {
   font-size: 30px;
   margin-bottom: 12px;
+  background: linear-gradient(90deg,#00ffff,#00ff99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+/* H3 (samakan dengan H1) */
+h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  background: linear-gradient(90deg,#00ffff,#00ff99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* H2 efek hover */
 h2:hover {
-  color: #ffffff;          /* warna berubah */
-  transform: scale(1.2);   /* membesar */
+  color: #ffffff;
+  transform: scale(1.1); /* sedikit dikurangi biar lebih halus */
   text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; 
 }
 
+/* Paragraph */
 p {
   font-size: 15px;
   color: #e0e0e0;
