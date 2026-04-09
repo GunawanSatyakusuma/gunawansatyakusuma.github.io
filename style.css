@@ -282,6 +282,18 @@ li {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
 }
 
+.hero-img {
+  margin: 20px auto;
+  display: block;
+  border-radius: 100%;
+}
+
+.content-img {
+  margin: 30px auto 10px;
+  display: block;
+  border-radius: 12px;
+}
+
 /* =========================
    FOOTER
 ========================= */
