@@ -15,6 +15,7 @@ body {
   line-height: 1.6;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: #ffffff;
+  text-align: center;
   background-color: #070b14;
   overflow-x: hidden;
 }
@@ -79,7 +80,6 @@ html::before {
 
 nav {
   padding: 25px 0;
-  text-align: center;
 }
 
 nav a {
@@ -98,10 +98,9 @@ nav a:hover {
 ========================= */
 
 .container {
-  max-width: 900px;
+  max-width: 720px;
   margin: auto;
   padding: 0 20px;
-  text-align: left;
 }
 
 /* =========================
@@ -109,7 +108,6 @@ nav a:hover {
 ========================= */
 
 .hero {
-  text-align: center;
   padding: 80px 20px 40px 20px;
 }
 
@@ -134,7 +132,6 @@ h1, h2, h3 {
 }
 
 h2 {
-  text-align: center;
   margin-bottom: 20px;
   transition: 0.3s ease;
 }
@@ -158,7 +155,7 @@ p {
   color: #e0e0e0;
   margin: 10px auto;
   line-height: 1.8;
-  max-width: 650px;
+  max-width: 520px; /* penting biar readable */
 }
 
 /* =========================
@@ -184,6 +181,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 40px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -203,7 +201,6 @@ a:hover {
   padding: 30px;
   transition: 0.3s ease;
   backdrop-filter: blur(10px);
-  text-align: left;
 }
 
 .card:hover {
@@ -261,11 +258,12 @@ a:hover {
 }
 
 /* =========================
-   LIST
+   LIST (FIX CENTER)
 ========================= */
 
 ul {
-  padding-left: 20px;
+  list-style-position: inside;
+  padding: 0;
 }
 
 li {
@@ -293,7 +291,6 @@ footer {
   padding: 40px 0;
   font-size: 14px;
   color: #666666;
-  text-align: center;
 }
 
 /* =========================
