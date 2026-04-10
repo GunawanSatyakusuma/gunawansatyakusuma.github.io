@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 <meta charset="UTF-8">
-<title>Kontak – Gunawan Satyakusuma</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Kontak – Gunawan Satyakusuma</title>
+
+<meta name="description" content="Hubungi Gunawan Satyakusuma untuk diskusi G-Loop Visibility Advisory, dokumentasi visual, atau kolaborasi.">
+
 <style>
+
+/* BASE */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: radial-gradient(circle at top, #001f1f, #000000);
     color: white;
+    text-align: center;
 }
 
+/* NAV */
 nav {
     padding: 20px;
-    text-align: center;
 }
 
 nav a {
@@ -23,16 +30,15 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-size: 14px;
-    transition: 0.3s;
 }
 
 nav a:hover {
     color: #00ffff;
 }
 
+/* HERO */
 .hero {
-    text-align: center;
-    padding: 60px 20px 30px 20px;
+    padding: 80px 20px 40px;
 }
 
 .hero h1 {
@@ -42,50 +48,63 @@ nav a:hover {
     -webkit-text-fill-color: transparent;
 }
 
+/* CONTAINER */
 .container {
-    max-width: 600px;
-    margin: 40px auto 80px auto;
-    padding: 20px;
-    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 0 20px;
 }
 
-.contact-box {
+/* SECTION */
+.section {
+    margin-top: 80px;
+}
+
+/* CARD */
+.card {
     background: rgba(0,255,255,0.05);
     border: 1px solid #00ffff33;
-    padding: 30px;
+    padding: 25px;
     border-radius: 15px;
+    margin-top: 20px;
 }
 
-.contact-box p {
-    color: #cccccc;
-    margin-bottom: 15px;
-}
-
-.contact-box a {
+/* LINK */
+.contact-link {
     display: block;
-    margin: 10px 0;
+    margin: 12px 0;
     color: #00ffaa;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-.contact-box a:hover {
+.contact-link:hover {
     color: #00ffff;
 }
-/* =========================
-   SPIDER WEB BACKGROUND
-   (NO LAYOUT CHANGE)
-========================= */
 
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    margin-top: 20px;
+    color: #00ffff;
+    border: 1px solid #00ffff55;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #00ffff;
+    color: black;
+}
+
+/* BACKGROUND EFFECT */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
-  pointer-events: none;
 
-  background-image:
-    /* garis radial */
+  background:
     repeating-conic-gradient(
       from 0deg,
       rgba(0,255,255,0.08) 0deg,
@@ -93,7 +112,6 @@ body::before {
       transparent 1deg,
       transparent 18deg
     ),
-    /* lingkaran konsentris */
     repeating-radial-gradient(
       circle at center,
       rgba(0,255,255,0.12) 0px,
@@ -102,101 +120,31 @@ body::before {
       transparent 110px
     );
 
-  animation: spiderRotate 90s linear infinite;
+  animation: rotate 90s linear infinite;
 }
 
-@keyframes spiderRotate {
+@keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
-/* ===== BACKGROUND IMAGE LAYER ===== */
-
-body::marker {
-  content: "";
-}
-
-body::selection {
-  background: #00ffff33;
-}
-
-/* Image layer (paling belakang) */
-body::before {
-  /* tidak diubah */
-}
-
-/* Tambahan layer baru */
-body::after {
-  /* tidak diubah */
-}
-
-/* Layer gambar baru */
+/* IMAGE BG */
 html::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -4;
-
+  z-index: -2;
   background: url("ai-blog-960x536.jpg") center/cover no-repeat;
-  opacity: 0.15; /* bikin tipis */
+  opacity: 0.15;
   filter: blur(2px);
 }
 
-.center {
-    text-align: center;
-    margin-top: 25px;
-}
-
-.button {
-    display: inline-block;
-    padding: 14px 28px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #00ffff;
-    text-decoration: none;
-    border: 1px solid #00ffff55;
-    border-radius: 12px;
-    background: rgba(0, 255, 255, 0.05);
-    backdrop-filter: blur(6px);
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px #00ffff33;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Hover efek neon */
-.button:hover {
-    color: #000;
-    background: linear-gradient(90deg, #00e6e6, #00cc88);
-    box-shadow: 0 0 8px #00ffff66, 0 0 16px #00ff9966;
-    transform: scale(1.05);
-}
-
-/* Animasi shine neon */
-.button::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(120deg, transparent, #00ffff55, transparent);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.button:hover::before {
-    opacity: 1;
-    animation: shine 1s linear;
-}
-
-@keyframes shine {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100%); }
-}
-    
 </style>
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -207,36 +155,67 @@ html::before {
     <a href="g-loop-visibility.html">Advisory</a>
 </nav>
 
-<div class="hero">
+<!-- HERO -->
+<section class="hero container">
     <h1>Kontak</h1>
-</div>
+    <p>Mulai dari percakapan, bukan penawaran.</p>
+</section>
 
-<div class="container">
-    <div class="contact-box">
-        <p>Untuk kolaborasi, dokumentasi visual, atau diskusi advisory:</p>
+<!-- INTRO -->
+<section class="section container">
+    <p>
+        Untuk kolaborasi, dokumentasi visual, atau diskusi mengenai 
+        <strong>G-Loop Visibility Advisory</strong>, silakan hubungi melalui kanal berikut.
+    </p>
+</section>
 
-        <a href="mailto:g-loop-method@gmail.com">📧 g-loop-method@gmail.com</a>
-        <a href="https://www.linkedin.com/in/gunawan-satyakusuma-25549537a/" 
-           target="_blank" 
-           rel="noopener noreferrer">
-           💼 LinkedIn – Gunawan Satyakusuma
+<!-- CONTACT OPTIONS -->
+<section class="section container">
+
+    <h2>Hubungi</h2>
+
+    <div class="card">
+
+        <a class="contact-link" href="mailto:g-loop-method@gmail.com">
+            📧 g-loop-method@gmail.com
         </a>
-        <a href="https://www.instagram.com/satya_kusumah" 
-           target="_blank" 
-           rel="noopener noreferrer">
-           📷 Instagram – @satya_kusumah
+
+        <a class="contact-link" href="https://www.linkedin.com/in/gunawan-satyakusuma-25549537a/" target="_blank">
+            💼 LinkedIn – Gunawan Satyakusuma
         </a>
-        <div class="center">
-    <a class="button" href="https://wa.me/6289515232062" target="_blank">
-      💬 Mulai Diskusi Awal
+
+        <a class="contact-link" href="https://www.instagram.com/satya_kusumah" target="_blank">
+            📷 Instagram – @satya_kusumah
+        </a>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="section container">
+
+    <h2>Mulai Diskusi</h2>
+
+    <p>
+        Jika ingin langsung berdiskusi, gunakan WhatsApp untuk respons lebih cepat.
+    </p>
+
+    <a class="btn" href="https://wa.me/6289515232062" target="_blank">
+        💬 Mulai Diskusi Awal
     </a>
-    </div>
 
-        <p style="margin-top:25px; font-size:14px; color:#888;">
+    <p style="margin-top:20px; font-size:14px; color:#888;">
         Respons biasanya dalam 24–48 jam.
-        </p>
-    </div>
-</div>
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+<footer style="margin-top:80px; padding:30px; font-size:14px; color:#777;">
+    © 2026 Gunawan Satyakusuma<br>
+    G-Loop Method · Visibility Advisory
+</footer>
 
 </body>
 </html>
