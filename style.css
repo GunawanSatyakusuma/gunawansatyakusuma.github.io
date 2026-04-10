@@ -75,22 +75,36 @@ html::before {
 }
 
 /* =========================
-   NAVIGATION
+   NAVIGATION (UPGRADE)
 ========================= */
 
 nav {
-  padding: 25px 0;
+  margin: 20px auto;
+  padding: 15px 25px;
+  max-width: 900px;
+
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(0,255,255,0.2);
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.08);
 }
 
+/* LINK */
 nav a {
   margin: 0 18px;
-  font-size: 14px;
+  font-size: 16px; /* dari 14 → 16 */
   color: #cccccc;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
+/* HOVER */
 nav a:hover {
   color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
+  box-shadow: 0 0 30px rgba(0,255,255,0.2);
 }
 
 /* =========================
