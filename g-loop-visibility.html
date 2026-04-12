@@ -18,19 +18,136 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "G-Loop Visibility Advisory",
-  "url": "https://gunawansatyakusuma.my.id/",
-  "logo": "https://gunawansatyakusuma.my.id/logo.png",
-  "description": "Pendampingan visibilitas berbasis praktik nyata dan refleksi pengalaman.",
-  "founder": {
-    "@type": "Person",
-    "name": "Gunawan Satyakusuma"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Bandung, Jawa Barat, Indonesia"
-  }
+  "@graph": [
+
+    /* =========================
+       ORGANIZATION ENTITY
+    ========================= */
+    {
+      "@type": "Organization",
+      "@id": "https://gunawansatyakusuma.my.id/#organization",
+      "name": "G-Loop Visibility Advisory",
+      "url": "https://gunawansatyakusuma.my.id/about.html",
+      "logo": "https://gunawansatyakusuma.my.id/assets/images/logo-gloop.png",
+      "description": "Pendampingan visibilitas berbasis praktik nyata dan refleksi pengalaman untuk UMKM dan profesional.",
+      "sameAs": [
+        "https://www.instagram.com/satya_kusumah",
+        "https://www.youtube.com/@GunawanSatyakusuma"
+      ]
+    },
+
+    /* =========================
+       PERSON (FOUNDER / E-E-A-T)
+    ========================= */
+    {
+      "@type": "Person",
+      "@id": "https://gunawansatyakusuma.my.id/#person",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
+      "worksFor": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       LOCAL CONTEXT ENTITY
+    ========================= */
+    {
+      "@type": "Place",
+      "@id": "https://gunawansatyakusuma.my.id/#location",
+      "name": "Bandung, Jawa Barat, Indonesia"
+    },
+
+    /* =========================
+       SERVICE / ADVISORY CORE
+    ========================= */
+    {
+      "@type": "Service",
+      "@id": "https://gunawansatyakusuma.my.id/#gloop-service",
+      "name": "G-Loop Visibility Advisory",
+      "serviceType": "Visibility Advisory & Digital Reflection Method",
+      "provider": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      },
+      "areaServed": {
+        "@id": "https://gunawansatyakusuma.my.id/#location"
+      },
+      "description": "Pendampingan visibilitas berbasis siklus aktivitas → dokumentasi → refleksi → narasi → keterbacaan.",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "UMKM dan Profesional berbasis praktik"
+      }
+    },
+
+    /* =========================
+       WEBPAGE ENTITY (SEO PAGE SIGNAL)
+    ========================= */
+    {
+      "@type": "WebPage",
+      "@id": "https://gunawansatyakusuma.my.id/about.html",
+      "url": "https://gunawansatyakusuma.my.id/about.html",
+      "name": "G-Loop Visibility Advisory – Gunawan Satyakusuma",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Gunawan Satyakusuma Official Site",
+        "url": "https://gunawansatyakusuma.my.id/"
+      },
+      "about": {
+        "@id": "https://gunawansatyakusuma.my.id/#gloop-service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://gunawansatyakusuma.my.id/assets/images/logo-gloop.png"
+      }
+    },
+
+    /* =========================
+       METHOD ENTITY (UNIQUE BRANDING)
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://gunawansatyakusuma.my.id/#gloop-method",
+      "name": "G-Loop Method",
+      "description": "Siklus kerja: aktivitas → dokumentasi → refleksi → narasi → keterbacaan",
+      "subjectOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#gloop-service"
+      }
+    },
+
+    /* =========================
+       FAQ (OPTIONAL RICH RESULT)
+    ========================= */
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu G-Loop Visibility Advisory?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pendampingan untuk membantu UMKM dan profesional memahami bagaimana aktivitas mereka terbaca, diingat, dan dipercaya secara digital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah ini jasa iklan atau marketing instan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bukan. Ini berbasis refleksi, dokumentasi, dan narasi pengalaman, bukan iklan instan atau trik viral."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Siapa yang cocok menggunakan G-Loop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UMKM aktif, profesional berbasis praktik, dan brand yang tumbuh dari aktivitas nyata."
+          }
+        }
+      ]
+    }
+
+  ]
 }
 </script>
 
