@@ -351,3 +351,17 @@ border-radius: 12px;
 overflow: hidden;
 box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
+
+.contact-link {
+  display: block;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  transition: 0.3s;
+}
+
+.contact-link:hover {
+  background: rgba(0,255,255,0.1);
+  transform: translateX(5px);
+}
