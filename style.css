@@ -21,6 +21,11 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  padding-bottom: 140px;
+}
+
+
 /* =========================
    GLOBAL IMAGE
 ========================= */
@@ -144,6 +149,11 @@ nav a:hover {
   box-shadow: 0 0 20px rgba(0,255,255,0.08);
 }
 
+.bottom-nav {
+  top: auto !important;   /* 🔥 ini kunci */
+  bottom: 20px;
+}
+
 /* H1 kecil biar nggak gede */
 .bottom-nav h1 {
   font-size: 12px;
@@ -202,8 +212,7 @@ nav a:hover {
 
 /* container bawah */
 .container.bottom {
-  margin-bottom: 120px; /* jarak dari nav */
-  padding-bottom: 40px; /* biar ada ruang dalam */
+  margin-bottom: 140px; /* aman dari nav */
 }
 /* =========================
    HERO
