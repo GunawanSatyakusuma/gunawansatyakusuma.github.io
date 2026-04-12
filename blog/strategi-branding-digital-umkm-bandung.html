@@ -15,6 +15,210 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/style.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    /* =========================
+       WEBSITE ENTITY
+    ========================= */
+    {
+      "@type": "WebSite",
+      "@id": "https://gunawansatyakusuma.my.id/#website",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "name": "Gunawan Satyakusuma",
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       ORGANIZATION ENTITY
+    ========================= */
+    {
+      "@type": "Organization",
+      "@id": "https://gunawansatyakusuma.my.id/#organization",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "logo": "https://gunawansatyakusuma.my.id/favicon.png",
+      "sameAs": [
+        "https://www.instagram.com/satya_kusumah",
+        "https://www.youtube.com/@GunawanSatyakusuma"
+      ]
+    },
+
+    /* =========================
+       PERSON ENTITY
+    ========================= */
+    {
+      "@type": "Person",
+      "@id": "https://gunawansatyakusuma.my.id/#person",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
+      "worksFor": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       WEBPAGE ENTITY
+    ========================= */
+    {
+      "@type": "WebPage",
+      "@id": "https://gunawansatyakusuma.my.id/blog/strategi-branding-digital-umkm-bandung.html",
+      "url": "https://gunawansatyakusuma.my.id/blog/strategi-branding-digital-umkm-bandung.html",
+      "name": "Strategi Branding Digital UMKM Bandung Berbasis Visibilitas",
+      "isPartOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Digital Branding UMKM"
+      }
+    },
+
+    /* =========================
+       ARTICLE (MAIN AUTHORITY)
+    ========================= */
+    {
+      "@type": "Article",
+      "@id": "https://gunawansatyakusuma.my.id/#article-branding-umkm-bandung",
+      "headline": "Strategi Branding Digital UMKM Bandung Berbasis Visibilitas",
+      "description": "Strategi branding digital UMKM berbasis visibilitas, dokumentasi visual, dan sistem digital untuk meningkatkan kepercayaan pelanggan.",
+      "author": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      },
+      "datePublished": "2026-04-13",
+      "dateModified": "2026-04-13",
+      "mainEntityOfPage": {
+        "@id": "https://gunawansatyakusuma.my.id/blog/strategi-branding-digital-umkm-bandung.html"
+      },
+      "keywords": [
+        "branding digital UMKM",
+        "UMKM Bandung",
+        "visibilitas digital",
+        "Google Maps branding",
+        "digital trust",
+        "visual marketing"
+      ]
+    },
+
+    /* =========================
+       CORE CONCEPTS
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/Brand",
+      "name": "Branding",
+      "description": "Proses membangun identitas dan persepsi bisnis"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/VisualContent",
+      "name": "Visual Documentation",
+      "description": "Foto dan video sebagai elemen utama branding digital"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/LocalBusiness",
+      "name": "UMKM Bandung",
+      "description": "Bisnis kecil dan menengah di wilayah Bandung"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/Trust",
+      "name": "Digital Trust",
+      "description": "Kepercayaan yang dibangun melalui konsistensi dan visibilitas online"
+    },
+
+    /* =========================
+       SYSTEM ENTITY (G-LOOP)
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://gunawansatyakusuma.my.id/#gloop-system",
+      "name": "G-Loop Visibility System",
+      "description": "Sistem visibilitas digital berbasis siklus: aktivitas → dokumentasi → refleksi → narasi → keterbacaan",
+      "subjectOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#article-branding-umkm-bandung"
+      }
+    },
+
+    /* =========================
+       HOW TO (BRANDING SYSTEM)
+    ========================= */
+    {
+      "@type": "HowTo",
+      "name": "Cara membangun branding digital UMKM Bandung",
+      "description": "Langkah membangun branding digital berbasis visibilitas dan dokumentasi",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Bangun identitas bisnis yang konsisten"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Gunakan dokumentasi visual (foto & video)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Optimasi Google Business Profile"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Bangun konten dari aktivitas nyata"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Integrasikan semua platform digital"
+        }
+      ]
+    },
+
+    /* =========================
+       FAQ (RICH RESULT READY)
+    ========================= */
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu branding digital UMKM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Branding digital UMKM adalah proses membangun identitas bisnis secara online melalui visual, konten, dan konsistensi informasi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah dokumentasi penting untuk branding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sangat penting karena foto dan video membangun kepercayaan dan memperkuat persepsi profesional bisnis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa itu sistem visibilitas digital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sistem yang menghubungkan aktivitas bisnis, dokumentasi, dan distribusi konten untuk meningkatkan kepercayaan dan visibilitas online."
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script>  
+
 </head>
 
 <body>
