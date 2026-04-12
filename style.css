@@ -117,6 +117,51 @@ nav a:hover {
 }
 
 /* =========================
+   BOTTOM NAVIGATION (FIXED)
+========================= */
+
+nav {
+  position: fixed;
+  bottom: 20px; /* pindah ke bawah */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  padding: 12px 20px;
+  max-width: 500px; /* lebih kecil biar cocok bawah */
+  width: calc(100% - 40px);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(0,255,255,0.2);
+  border-radius: 25px;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.08);
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+nav a {
+  font-size: 13px;
+  color: #cccccc;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+nav a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+/* =========================
    CONTAINER
 ========================= */
 
