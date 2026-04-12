@@ -15,6 +15,184 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/style.css">
 
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    /* =========================
+       WEBSITE ENTITY
+    ========================= */
+    {
+      "@type": "WebSite",
+      "@id": "https://gunawansatyakusuma.my.id/#website",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "name": "Gunawan Satyakusuma",
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       ORGANIZATION ENTITY
+    ========================= */
+    {
+      "@type": "Organization",
+      "@id": "https://gunawansatyakusuma.my.id/#organization",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "logo": "https://gunawansatyakusuma.my.id/favicon.png",
+      "sameAs": [
+        "https://www.instagram.com/satya_kusumah",
+        "https://www.youtube.com/@GunawanSatyakusuma"
+      ]
+    },
+
+    /* =========================
+       PERSON ENTITY (E-E-A-T BOOST)
+    ========================= */
+    {
+      "@type": "Person",
+      "@id": "https://gunawansatyakusuma.my.id/#person",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
+      "worksFor": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       WEBPAGE ENTITY
+    ========================= */
+    {
+      "@type": "WebPage",
+      "@id": "https://gunawansatyakusuma.my.id/blog/kenapa-bisnis-tidak-muncul-di-google-maps.html",
+      "url": "https://gunawansatyakusuma.my.id/blog/kenapa-bisnis-tidak-muncul-di-google-maps.html",
+      "name": "Kenapa Bisnis Tidak Muncul di Google Maps? Ini Penyebab dan Solusinya",
+      "isPartOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#website"
+      },
+      "about": {
+        "@id": "https://schema.org/Place"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://gunawansatyakusuma.my.id/favicon.png"
+      }
+    },
+
+    /* =========================
+       ARTICLE (SEO CORE)
+    ========================= */
+    {
+      "@type": "Article",
+      "@id": "https://gunawansatyakusuma.my.id/#article-googlemaps",
+      "headline": "Kenapa Bisnis Tidak Muncul di Google Maps? Ini Penyebab dan Solusinya",
+      "description": "Analisis penyebab bisnis tidak muncul di Google Maps serta solusi berbasis sistem visibilitas digital.",
+      "author": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      },
+      "datePublished": "2026-04-13",
+      "dateModified": "2026-04-13",
+      "mainEntityOfPage": {
+        "@id": "https://gunawansatyakusuma.my.id/blog/kenapa-bisnis-tidak-muncul-di-google-maps.html"
+      }
+    },
+
+    /* =========================
+       TOPICAL ENTITY (GOOGLE MAPS)
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/GoogleMaps",
+      "name": "Google Maps",
+      "description": "Platform peta digital dan sistem visibilitas bisnis lokal dari Google"
+    },
+
+    /* =========================
+       G-LOOP ENTITY (SYSTEM AUTHORITY)
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://gunawansatyakusuma.my.id/#gloop-method",
+      "name": "G-Loop Visibility System",
+      "description": "Sistem visibilitas berbasis siklus: dokumentasi → refleksi → narasi → keterbacaan",
+      "subjectOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#article-googlemaps"
+      }
+    },
+
+    /* =========================
+       HOW TO (RICH RESULT POWER)
+    ========================= */
+    {
+      "@type": "HowTo",
+      "name": "Cara agar bisnis muncul di Google Maps",
+      "description": "Langkah sistematis meningkatkan visibilitas bisnis di Google Maps",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verifikasi Google Business Profile"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Lengkapi informasi bisnis secara konsisten"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Upload foto dan dokumentasi secara rutin"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Dapatkan review pelanggan"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Hubungkan dengan website resmi"
+        }
+      ]
+    },
+
+    /* =========================
+       FAQ (RICH RESULT READY)
+    ========================= */
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kenapa bisnis saya tidak muncul di Google Maps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Biasanya karena belum verifikasi, minim aktivitas, atau informasi bisnis tidak lengkap."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah foto berpengaruh di Google Maps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya, foto membantu meningkatkan kepercayaan dan visibilitas bisnis di hasil pencarian lokal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana cara meningkatkan visibilitas Google Maps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dengan verifikasi profil, update rutin, review pelanggan, dan sistem dokumentasi visual."
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script> 
+
 </head>
 
 <body>
