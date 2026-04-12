@@ -15,6 +15,210 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/style.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    /* =========================
+       WEBSITE ENTITY
+    ========================= */
+    {
+      "@type": "WebSite",
+      "@id": "https://gunawansatyakusuma.my.id/#website",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "name": "Gunawan Satyakusuma",
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       ORGANIZATION ENTITY
+    ========================= */
+    {
+      "@type": "Organization",
+      "@id": "https://gunawansatyakusuma.my.id/#organization",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "logo": "https://gunawansatyakusuma.my.id/favicon.png",
+      "sameAs": [
+        "https://www.instagram.com/satya_kusumah",
+        "https://www.youtube.com/@GunawanSatyakusuma"
+      ]
+    },
+
+    /* =========================
+       PERSON ENTITY
+    ========================= */
+    {
+      "@type": "Person",
+      "@id": "https://gunawansatyakusuma.my.id/#person",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
+      "worksFor": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       WEBPAGE ENTITY
+    ========================= */
+    {
+      "@type": "WebPage",
+      "@id": "https://gunawansatyakusuma.my.id/blog/strategi-pemasaran-digital-umkm-bandung-berbasis-persepsi.html",
+      "url": "https://gunawansatyakusuma.my.id/blog/strategi-pemasaran-digital-umkm-bandung-berbasis-persepsi.html",
+      "name": "Strategi Pemasaran Digital UMKM Bandung Berbasis Persepsi",
+      "isPartOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Digital Marketing Perception System"
+      }
+    },
+
+    /* =========================
+       ARTICLE CORE
+    ========================= */
+    {
+      "@type": "Article",
+      "@id": "https://gunawansatyakusuma.my.id/#article-marketing-persepsi-umkm",
+      "headline": "Strategi Pemasaran Digital UMKM Bandung Berbasis Persepsi",
+      "description": "Strategi pemasaran digital UMKM berbasis persepsi, pengalaman konsumen, dan sistem visibilitas digital untuk meningkatkan kepercayaan.",
+      "author": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      },
+      "datePublished": "2026-04-13",
+      "dateModified": "2026-04-13",
+      "mainEntityOfPage": {
+        "@id": "https://gunawansatyakusuma.my.id/blog/strategi-pemasaran-digital-umkm-bandung-berbasis-persepsi.html"
+      },
+      "keywords": [
+        "pemasaran digital UMKM",
+        "persepsi brand",
+        "digital marketing Bandung",
+        "visibilitas bisnis",
+        "trust marketing",
+        "G-Loop system"
+      ]
+    },
+
+    /* =========================
+       CORE CONCEPTS
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/Marketing",
+      "name": "Digital Marketing",
+      "description": "Strategi pemasaran digital untuk bisnis modern"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/Perception",
+      "name": "Brand Perception",
+      "description": "Cara konsumen memandang dan menilai sebuah brand"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/UserExperience",
+      "name": "Customer Experience",
+      "description": "Pengalaman pelanggan dalam berinteraksi dengan bisnis"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/Trust",
+      "name": "Digital Trust",
+      "description": "Kepercayaan yang dibangun melalui konsistensi dan pengalaman nyata"
+    },
+
+    /* =========================
+       SYSTEM ENTITY (G-LOOP)
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://gunawansatyakusuma.my.id/#gloop-system",
+      "name": "G-Loop Visibility System",
+      "description": "Sistem visibilitas berbasis aktivitas → dokumentasi → refleksi → narasi → keterbacaan",
+      "subjectOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#article-marketing-persepsi-umkm"
+      }
+    },
+
+    /* =========================
+       HOW TO (PERCEPTION MARKETING)
+    ========================= */
+    {
+      "@type": "HowTo",
+      "name": "Cara membangun pemasaran digital berbasis persepsi",
+      "description": "Langkah membangun pemasaran digital yang fokus pada pengalaman dan persepsi pelanggan",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Bangun pengalaman pertama yang kuat (website & Maps)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Gunakan visual autentik dari aktivitas nyata"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Konsisten dalam identitas brand di semua platform"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Bangun interaksi dan review pelanggan"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Integrasikan semua channel digital menjadi ekosistem"
+        }
+      ]
+    },
+
+    /* =========================
+       FAQ (RICH RESULT READY)
+    ========================= */
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu pemasaran digital berbasis persepsi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Strategi pemasaran yang fokus pada bagaimana konsumen memandang dan mempercayai brand melalui pengalaman digital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah pengalaman konsumen penting dalam digital marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sangat penting karena pengalaman pertama menentukan persepsi dan kepercayaan terhadap bisnis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa peran G-Loop dalam pemasaran digital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "G-Loop membantu membangun sistem visibilitas berbasis aktivitas, dokumentasi, dan narasi untuk meningkatkan kepercayaan digital."
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script>  
+
 </head>
 
 <body>
