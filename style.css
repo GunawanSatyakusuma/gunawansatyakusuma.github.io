@@ -366,6 +366,57 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   transform: translateX(5px);
 }
 
+/* ========================= LOGO SCROLL ========================= */
+.logo-section {
+  overflow: hidden;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: max-content;
+  animation: scrollLogo 25s linear infinite;
+}
+
+.logo-track img {
+  height: 150px;
+  width: auto;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.logo-track img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.08);
+}
+
+/* ========================= ANIMATION ========================= */
+@keyframes scrollLogo {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ========================= BANNER ========================= */
+.banner {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.banner h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #logo-rotator {
   display: block;
   width: 100%;
