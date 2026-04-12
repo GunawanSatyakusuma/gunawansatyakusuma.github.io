@@ -15,6 +15,195 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/style.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    /* =========================
+       WEBSITE ENTITY
+    ========================= */
+    {
+      "@type": "WebSite",
+      "@id": "https://gunawansatyakusuma.my.id/#website",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "name": "Gunawan Satyakusuma",
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       ORGANIZATION ENTITY
+    ========================= */
+    {
+      "@type": "Organization",
+      "@id": "https://gunawansatyakusuma.my.id/#organization",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "logo": "https://gunawansatyakusuma.my.id/favicon.png",
+      "sameAs": [
+        "https://www.instagram.com/satya_kusumah",
+        "https://www.youtube.com/@GunawanSatyakusuma"
+      ]
+    },
+
+    /* =========================
+       PERSON ENTITY (E-E-A-T)
+    ========================= */
+    {
+      "@type": "Person",
+      "@id": "https://gunawansatyakusuma.my.id/#person",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
+      "worksFor": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       WEBPAGE ENTITY
+    ========================= */
+    {
+      "@type": "WebPage",
+      "@id": "https://gunawansatyakusuma.my.id/blog/optimasi-google-business-profile.html",
+      "url": "https://gunawansatyakusuma.my.id/blog/optimasi-google-business-profile.html",
+      "name": "Optimasi Google Business Profile untuk Meningkatkan Visibilitas di Google Maps",
+      "isPartOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Google Business Profile Optimization"
+      }
+    },
+
+    /* =========================
+       ARTICLE (CORE SEO SIGNAL)
+    ========================= */
+    {
+      "@type": "Article",
+      "@id": "https://gunawansatyakusuma.my.id/#article-gbp",
+      "headline": "Optimasi Google Business Profile untuk Meningkatkan Visibilitas di Google Maps",
+      "description": "Panduan optimasi Google Business Profile untuk meningkatkan visibilitas bisnis di Google Maps secara sistematis dan berbasis G-Loop System.",
+      "author": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      },
+      "datePublished": "2026-04-13",
+      "dateModified": "2026-04-13",
+      "mainEntityOfPage": {
+        "@id": "https://gunawansatyakusuma.my.id/blog/optimasi-google-business-profile.html"
+      }
+    },
+
+    /* =========================
+       GOOGLE BUSINESS PROFILE ENTITY
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/GoogleBusinessProfile",
+      "name": "Google Business Profile",
+      "description": "Platform manajemen bisnis dari Google untuk visibilitas di Google Maps dan Search"
+    },
+
+    /* =========================
+       LOCAL ENTITY (BANDUNG)
+    ========================= */
+    {
+      "@type": "Place",
+      "@id": "https://schema.org/Bandung",
+      "name": "Bandung",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Jawa Barat",
+        "addressCountry": "ID"
+      }
+    },
+
+    /* =========================
+       G-LOOP SYSTEM ENTITY
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://gunawansatyakusuma.my.id/#gloop-system",
+      "name": "G-Loop Visibility System",
+      "description": "Sistem visibilitas berbasis siklus: dokumentasi → distribusi → interaksi → penguatan sinyal",
+      "subjectOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#article-gbp"
+      }
+    },
+
+    /* =========================
+       HOW TO (RICH RESULT POWER)
+    ========================= */
+    {
+      "@type": "HowTo",
+      "name": "Cara optimasi Google Business Profile",
+      "description": "Langkah sistematis untuk meningkatkan visibilitas Google Maps melalui Google Business Profile",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Lengkapi profil bisnis secara detail dan konsisten"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Upload foto secara rutin"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Bangun review dari pelanggan"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Update posting secara berkala"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Hubungkan dengan website resmi"
+        }
+      ]
+    },
+
+    /* =========================
+       FAQ (RICH RESULT READY)
+    ========================= */
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu Google Business Profile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Business Profile adalah platform untuk mengelola informasi bisnis agar muncul di Google Maps dan Search."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kenapa Google Business Profile tidak muncul di Google Maps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Biasanya karena belum optimal, kurang aktivitas, atau tidak ada sinyal kepercayaan seperti review dan foto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana cara meningkatkan visibilitas Google Maps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dengan optimasi profil, update rutin, dokumentasi visual, review, dan sistem visibilitas seperti G-Loop."
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script>  
+
 </head>
 
 <body>
@@ -222,7 +411,6 @@ Gunawan Satyakusuma membantu bisnis meningkatkan visibilitas Google Maps melalui
 
 <footer>
 © 2026 Gunawan Satyakusuma · Bandung, Indonesia<br>
-Website resmi: https://gunawansatyakusuma.my.id
 </footer>
 
 </body>
