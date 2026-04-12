@@ -15,6 +15,195 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/style.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    /* =========================
+       WEBSITE ENTITY
+    ========================= */
+    {
+      "@type": "WebSite",
+      "@id": "https://gunawansatyakusuma.my.id/#website",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "name": "Gunawan Satyakusuma",
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       ORGANIZATION ENTITY
+    ========================= */
+    {
+      "@type": "Organization",
+      "@id": "https://gunawansatyakusuma.my.id/#organization",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "logo": "https://gunawansatyakusuma.my.id/favicon.png",
+      "sameAs": [
+        "https://www.instagram.com/satya_kusumah",
+        "https://www.youtube.com/@GunawanSatyakusuma"
+      ]
+    },
+
+    /* =========================
+       PERSON ENTITY (E-E-A-T CORE)
+    ========================= */
+    {
+      "@type": "Person",
+      "@id": "https://gunawansatyakusuma.my.id/#person",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
+      "worksFor": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       WEBPAGE ENTITY
+    ========================= */
+    {
+      "@type": "WebPage",
+      "@id": "https://gunawansatyakusuma.my.id/blog/seo-modern-2026-berbasis-kepercayaan.html",
+      "url": "https://gunawansatyakusuma.my.id/blog/seo-modern-2026-berbasis-kepercayaan.html",
+      "name": "SEO Modern 2026: Bukan Lagi Tentang Keyword, Tapi Tentang Kepercayaan",
+      "isPartOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "SEO Trust Based System"
+      }
+    },
+
+    /* =========================
+       ARTICLE (CORE AUTHORITY)
+    ========================= */
+    {
+      "@type": "Article",
+      "@id": "https://gunawansatyakusuma.my.id/#article-seo-2026",
+      "headline": "SEO Modern 2026: Bukan Lagi Tentang Keyword, Tapi Tentang Kepercayaan",
+      "description": "Pembahasan perubahan SEO modern dari keyword-based menjadi trust-based dan entity-based SEO di era 2026.",
+      "author": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      },
+      "datePublished": "2026-04-13",
+      "dateModified": "2026-04-13",
+      "mainEntityOfPage": {
+        "@id": "https://gunawansatyakusuma.my.id/blog/seo-modern-2026-berbasis-kepercayaan.html"
+      }
+    },
+
+    /* =========================
+       CORE CONCEPT ENTITY (SEO SHIFT)
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/SEO",
+      "name": "Search Engine Optimization",
+      "description": "Strategi optimasi visibilitas di mesin pencari"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/E_E_A_T",
+      "name": "E-E-A-T",
+      "description": "Experience, Expertise, Authoritativeness, Trustworthiness dalam evaluasi kualitas konten"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/Entity",
+      "name": "Entity SEO",
+      "description": "SEO berbasis identitas, hubungan, dan entitas digital"
+    },
+
+    /* =========================
+       SYSTEM ENTITY (G-LOOP LINK)
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://gunawansatyakusuma.my.id/#gloop-system",
+      "name": "G-Loop Visibility System",
+      "description": "Sistem visibilitas berbasis siklus: aktivitas → dokumentasi → refleksi → narasi → keterbacaan",
+      "subjectOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#article-seo-2026"
+      }
+    },
+
+    /* =========================
+       HOW TO (SEO THINKING SHIFT)
+    ========================= */
+    {
+      "@type": "HowTo",
+      "name": "Cara memahami SEO modern 2026",
+      "description": "Langkah memahami perubahan SEO dari keyword-based ke trust-based system",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Pahami bahwa SEO bukan lagi hanya keyword"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Bangun entity (brand, person, lokasi)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Konsisten membangun jejak digital"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Bangun trust melalui pengalaman nyata"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Hubungkan semua platform menjadi ekosistem"
+        }
+      ]
+    },
+
+    /* =========================
+       FAQ (RICH RESULT READY)
+    ========================= */
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apakah keyword masih penting di SEO 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Masih penting, tetapi bukan lagi faktor utama. Google lebih fokus pada trust, entity, dan reputasi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa itu entity dalam SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entity adalah identitas nyata seperti orang, brand, tempat, atau konsep yang dikenali Google sebagai entitas digital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa faktor paling penting SEO modern?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kepercayaan (trust), pengalaman nyata (experience), dan konsistensi identitas digital."
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script>  
+
 </head>
 
 <body>
