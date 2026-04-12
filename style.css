@@ -378,7 +378,7 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   align-items: center;
   gap: 80px;
   width: max-content;
-  animation: scrollLogo 25s linear infinite;
+  animation: scrollLogo 50s linear infinite;
 }
 
 .logo-track img {
