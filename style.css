@@ -483,3 +483,9 @@ a:hover {
   min-width: unset !important;
   max-width: 100% !important;
 }
+
+@media (max-width: 1024px) {
+  .instagram-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
