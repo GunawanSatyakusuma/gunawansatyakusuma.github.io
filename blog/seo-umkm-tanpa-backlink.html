@@ -15,6 +15,210 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/style.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    /* =========================
+       WEBSITE ENTITY
+    ========================= */
+    {
+      "@type": "WebSite",
+      "@id": "https://gunawansatyakusuma.my.id/#website",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "name": "Gunawan Satyakusuma",
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       ORGANIZATION ENTITY
+    ========================= */
+    {
+      "@type": "Organization",
+      "@id": "https://gunawansatyakusuma.my.id/#organization",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "logo": "https://gunawansatyakusuma.my.id/favicon.png",
+      "sameAs": [
+        "https://www.instagram.com/satya_kusumah",
+        "https://www.youtube.com/@GunawanSatyakusuma"
+      ]
+    },
+
+    /* =========================
+       PERSON ENTITY (AUTHOR AUTHORITY)
+    ========================= */
+    {
+      "@type": "Person",
+      "@id": "https://gunawansatyakusuma.my.id/#person",
+      "name": "Gunawan Satyakusuma",
+      "url": "https://gunawansatyakusuma.my.id/gunawan-satyakusuma.html",
+      "worksFor": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      }
+    },
+
+    /* =========================
+       WEBPAGE ENTITY
+    ========================= */
+    {
+      "@type": "WebPage",
+      "@id": "https://gunawansatyakusuma.my.id/blog/seo-umkm-tanpa-backlink.html",
+      "url": "https://gunawansatyakusuma.my.id/blog/seo-umkm-tanpa-backlink.html",
+      "name": "SEO Modern untuk UMKM: Bisa Naik Tanpa Backlink?",
+      "isPartOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Local SEO for SMEs without backlinks"
+      }
+    },
+
+    /* =========================
+       ARTICLE CORE
+    ========================= */
+    {
+      "@type": "Article",
+      "@id": "https://gunawansatyakusuma.my.id/#article-seo-umkm-backlink",
+      "headline": "SEO Modern untuk UMKM: Bisa Naik Tanpa Backlink?",
+      "description": "Strategi SEO modern untuk UMKM tanpa backlink dengan fokus pada Google Maps, trust signal, dan aktivitas bisnis nyata.",
+      "author": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      },
+      "datePublished": "2026-04-13",
+      "dateModified": "2026-04-13",
+      "mainEntityOfPage": {
+        "@id": "https://gunawansatyakusuma.my.id/blog/seo-umkm-tanpa-backlink.html"
+      },
+      "keywords": [
+        "SEO UMKM",
+        "tanpa backlink",
+        "Google Maps SEO",
+        "local SEO",
+        "trust signal",
+        "entity SEO"
+      ]
+    },
+
+    /* =========================
+       CORE CONCEPTS
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/LocalBusiness",
+      "name": "Local Business SEO",
+      "description": "Optimasi bisnis lokal untuk Google Maps dan pencarian lokal"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/Trust",
+      "name": "Trust Signal in SEO",
+      "description": "Sinyal kepercayaan seperti review, konsistensi, dan aktivitas nyata"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/Backlink",
+      "name": "Backlink",
+      "description": "Tautan dari website lain sebagai sinyal SEO"
+    },
+
+    {
+      "@type": "Thing",
+      "@id": "https://schema.org/GoogleBusinessProfile",
+      "name": "Google Business Profile",
+      "description": "Profil bisnis di Google Maps untuk visibilitas lokal"
+    },
+
+    /* =========================
+       SYSTEM ENTITY (G-LOOP)
+    ========================= */
+    {
+      "@type": "Thing",
+      "@id": "https://gunawansatyakusuma.my.id/#gloop",
+      "name": "G-Loop Visibility System",
+      "description": "Sistem visibilitas berbasis aktivitas → dokumentasi → refleksi → narasi → keterbacaan",
+      "subjectOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#article-seo-umkm-backlink"
+      }
+    },
+
+    /* =========================
+       HOW TO SEO UMKM
+    ========================= */
+    {
+      "@type": "HowTo",
+      "name": "Cara SEO UMKM tanpa backlink",
+      "description": "Strategi meningkatkan visibilitas bisnis UMKM tanpa bergantung pada backlink",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Optimasi Google Maps secara maksimal"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Bangun identitas bisnis konsisten"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Gunakan dokumentasi aktivitas nyata"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Bangun review asli dari pelanggan"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Bangun ekosistem digital (website + maps + sosial)"
+        }
+      ]
+    },
+
+    /* =========================
+       FAQ (RICH RESULT READY)
+    ========================= */
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apakah UMKM bisa SEO tanpa backlink?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa, terutama untuk bisnis lokal dengan fokus pada Google Maps, review, dan aktivitas nyata."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa yang lebih penting dari backlink untuk UMKM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trust signal, Google Business Profile, dan konsistensi identitas digital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah Google Maps penting untuk SEO UMKM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sangat penting karena menjadi sumber utama visibilitas lokal."
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script>  
+
 </head>
 
 <body>
