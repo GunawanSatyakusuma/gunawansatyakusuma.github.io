@@ -516,3 +516,25 @@ a:hover {
   transform: scale(1.4) translateY(-30px);
   transform-origin: top center; 
 }
+
+/* DEFAULT (HP dulu) */
+.ig-frame iframe {
+  width: 100% !important;
+  height: 100% !important;
+  transform: scale(1.4) translateY(-30px);
+  transform-origin: top center;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .ig-frame iframe {
+    transform: scale(1.5) translateY(-40px);
+  }
+}
+
+/* LAPTOP / DESKTOP 🔥 */
+@media (min-width: 1024px) {
+  .ig-frame iframe {
+    transform: scale(1.6) translateY(-60px);
+  }
+}
