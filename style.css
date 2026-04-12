@@ -527,7 +527,7 @@ a:hover {
 /* HP */
 @media (max-width: 768px) {
   .instagram-grid {
-    grid-template-columns: 1fr;
-    transform: scale(1.5) translateY(-50px); 
+    grid-template-columns: 2fr;
+    transform: scale(1.4) translateY(-50px); 
   }
 }
