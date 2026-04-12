@@ -205,7 +205,7 @@ nav a:hover {
 ========================= */
 
 .container {
-  max-width: 720px;
+  max-width: 900px;
   margin: auto;
   padding: 0 20px;
 }
@@ -265,7 +265,7 @@ p {
   color: #e0e0e0;
   margin: 10px auto;
   line-height: 1.8;
-  max-width: 520px;
+  max-width: 700px;
 }
 
 /* =========================
