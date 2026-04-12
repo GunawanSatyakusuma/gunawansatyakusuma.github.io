@@ -202,9 +202,9 @@ nav a:hover {
 
 /* container bawah */
 .container.bottom {
-  margin-bottom: 120px; /* biar nggak ketabrak nav */
+  margin-bottom: 120px; /* jarak dari nav */
+  padding-bottom: 40px; /* biar ada ruang dalam */
 }
-
 /* =========================
    HERO
 ========================= */
