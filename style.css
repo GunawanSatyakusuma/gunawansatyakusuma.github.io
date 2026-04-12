@@ -520,7 +520,7 @@ a:hover {
 /* LAPTOP / DESKTOP 🔥 */
 @media (min-width: 1024px) {
   .ig-frame iframe {
-    transform: scale(1.45) translateY(-50px);
+    transform: scale(1.6) translateY(-50px);
   }
 }
 
@@ -528,6 +528,6 @@ a:hover {
 @media (max-width: 768px) {
   .instagram-grid {
     grid-template-columns: 1fr;
-    transform: scale(1.45) translateY(-50px); 
+    transform: scale(1.6) translateY(-50px); 
   }
 }
