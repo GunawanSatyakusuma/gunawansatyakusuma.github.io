@@ -150,6 +150,17 @@ nav a:hover {
   text-decoration: none;
 }
 
+.bottom-nav {
+  flex-direction: column; /* biar h1 di atas menu */
+  gap: 5px;
+}
+
+.bottom-nav h1 {
+  font-size: 14px;
+  margin: 0;
+  color: #00ffff;
+}
+
 /* =========================
    NAV LINKS
 ========================= */
