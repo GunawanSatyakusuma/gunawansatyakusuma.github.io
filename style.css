@@ -127,38 +127,49 @@ nav a:hover {
   transform: translateX(-50%);
   z-index: 1000;
 
-  padding: 12px 20px;
+  padding: 10px 15px;
   max-width: 500px;
   width: calc(100% - 40px);
 
   display: flex;
-  justify-content: space-around;
+  flex-direction: column; /* boleh column */
   align-items: center;
+  gap: 6px;
 
   background: rgba(0,0,0,0.5);
   border: 1px solid rgba(0,255,255,0.2);
-  border-radius: 25px;
+  border-radius: 20px;
 
   backdrop-filter: blur(10px);
   box-shadow: 0 0 20px rgba(0,255,255,0.08);
 }
 
+/* H1 kecil biar nggak gede */
+.bottom-nav h1 {
+  font-size: 12px;
+  margin: 0;
+  color: #00ffff;
+}
+
+/* WRAPPER MENU (INI KUNCI 🔥) */
+.bottom-nav .menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* LINK */
 .bottom-nav a {
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
   color: #cccccc;
   text-decoration: none;
 }
 
-.bottom-nav {
-  flex-direction: column; /* biar h1 di atas menu */
-  gap: 5px;
-}
-
-.bottom-nav h1 {
-  font-size: 14px;
-  margin: 0;
+/* hover */
+.bottom-nav a:hover {
   color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
 }
 
 /* =========================
