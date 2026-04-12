@@ -466,3 +466,20 @@ a:hover {
   display: block;
   border-radius: 12px;
 }
+
+
+/* =========================
+   INSTAGRAM
+========================= */
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.instagram-grid blockquote {
+  width: 100% !important;
+  min-width: unset !important;
+  max-width: 100% !important;
+}
