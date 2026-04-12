@@ -513,4 +513,6 @@ a:hover {
 .ig-frame iframe {
   width: 100% !important;
   height: 100% !important;
+  transform: scale(1.4) translateY(-30px);
+  transform-origin: top center; 
 }
