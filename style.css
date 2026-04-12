@@ -474,10 +474,9 @@ a:hover {
 
 .instagram-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 🔥 jadi 2 kolom */
   gap: 15px;
 }
-
 /* WRAPPER */
 .ig-item {
   width: 100%;
@@ -494,12 +493,6 @@ a:hover {
 /* PENTING BANGET 🔥 */
 .instagram-grid blockquote {
   margin: 0 auto !important;
-}
-
-@media (max-width: 1024px) {
-  .instagram-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .ig-frame {
@@ -521,7 +514,7 @@ a:hover {
 .ig-frame iframe {
   width: 100% !important;
   height: 100% !important;
-  transform: scale(1.4) translateY(-30px);
+  transform: scale(1.3) translateY(-30px);
   transform-origin: top center;
 }
 
@@ -535,6 +528,13 @@ a:hover {
 /* LAPTOP / DESKTOP 🔥 */
 @media (min-width: 1024px) {
   .ig-frame iframe {
-    transform: scale(1.6) translateY(-60px);
+    transform: scale(1.4) translateY(-40px);
+  }
+}
+
+/* HP */
+@media (max-width: 768px) {
+  .instagram-grid {
+    grid-template-columns: 1fr;
   }
 }
