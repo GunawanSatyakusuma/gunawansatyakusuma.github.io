@@ -528,6 +528,6 @@ a:hover {
 @media (max-width: 768px) {
   .instagram-grid {
     grid-template-columns: 1fr;
-    transform: scale(1.6) translateY(-50px); 
+    transform: scale(1.5) translateY(-50px); 
   }
 }
