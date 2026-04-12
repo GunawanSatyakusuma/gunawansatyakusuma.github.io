@@ -475,13 +475,25 @@ a:hover {
 .instagram-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 
-.instagram-grid blockquote {
+/* WRAPPER */
+.ig-item {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* PAKSA EMBED */
+.instagram-media {
+  min-width: 0 !important;
   width: 100% !important;
-  min-width: unset !important;
   max-width: 100% !important;
+}
+
+/* PENTING BANGET 🔥 */
+.instagram-grid blockquote {
+  margin: 0 auto !important;
 }
 
 @media (max-width: 1024px) {
