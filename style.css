@@ -200,6 +200,11 @@ nav a:hover {
   padding: 0 20px;
 }
 
+/* container bawah */
+.container.bottom {
+  margin-bottom: 120px; /* biar nggak ketabrak nav */
+}
+
 /* =========================
    HERO
 ========================= */
