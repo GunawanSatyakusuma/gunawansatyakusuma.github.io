@@ -28,25 +28,168 @@
   "@context": "https://schema.org",
   "@graph": [
 
+    /* =========================
+       PERSON ENTITY
+    ========================= */
     {
       "@type": "Person",
       "@id": "https://gunawansatyakusuma.my.id/#person",
       "name": "Gunawan Satyakusuma",
-      "jobTitle": "Praktisi Dokumentasi Visual dan Pengembang G-Loop",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "image": "https://gunawansatyakusuma.my.id/assets/images/profile.jpg",
+      "jobTitle": "Praktisi Dokumentasi Visual & Pengembang G-Loop",
+      "description": "Praktisi dokumentasi visual di Bandung dan pengembang sistem visibilitas digital G-Loop.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Bandung",
+        "addressRegion": "Jawa Barat",
         "addressCountry": "ID"
-      }
+      },
+      "sameAs": [
+        "https://wa.me/6289515232062"
+      ]
     },
 
+    /* =========================
+       ORGANIZATION / BRAND
+    ========================= */
     {
       "@type": "Organization",
       "@id": "https://gunawansatyakusuma.my.id/#organization",
       "name": "G-Loop",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "description": "Sistem visibilitas digital berbasis dokumentasi, distribusi konten, dan Google Maps ecosystem.",
       "founder": {
         "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "logo": "https://gunawansatyakusuma.my.id/favicon.png"
+    },
+
+    /* =========================
+       WEBSITE ENTITY (SEO CORE)
+    ========================= */
+    {
+      "@type": "WebSite",
+      "@id": "https://gunawansatyakusuma.my.id/#website",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "name": "Gunawan Satyakusuma",
+      "description": "Jasa foto video Bandung dan sistem visibilitas digital G-Loop",
+      "publisher": {
+        "@id": "https://gunawansatyakusuma.my.id/#organization"
+      },
+      "inLanguage": "id-ID",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://gunawansatyakusuma.my.id/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
+    },
+
+    /* =========================
+       WEBPAGE ENTITY
+    ========================= */
+    {
+      "@type": "WebPage",
+      "@id": "https://gunawansatyakusuma.my.id/#webpage",
+      "url": "https://gunawansatyakusuma.my.id/",
+      "name": "Gunawan Satyakusuma | Jasa Foto Video Bandung & G-Loop",
+      "description": "Jasa foto video, dokumentasi bisnis, dan sistem visibilitas digital G-Loop.",
+      "isPartOf": {
+        "@id": "https://gunawansatyakusuma.my.id/#website"
+      },
+      "about": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://gunawansatyakusuma.my.id/#profile-image"
+      }
+    },
+
+    /* =========================
+       IMAGE ENTITY
+    ========================= */
+    {
+      "@type": "ImageObject",
+      "@id": "https://gunawansatyakusuma.my.id/#profile-image",
+      "url": "https://gunawansatyakusuma.my.id/assets/images/profile.jpg",
+      "caption": "Gunawan Satyakusuma - Dokumentasi Visual"
+    },
+
+    /* =========================
+       LOCAL BUSINESS (PHOTO VIDEO SERVICE)
+    ========================= */
+    {
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "@id": "https://gunawansatyakusuma.my.id/#photo-video-service",
+      "name": "Jasa Foto Video Bandung - Gunawan Satyakusuma",
+      "image": "https://gunawansatyakusuma.my.id/assets/images/profile.jpg",
+      "provider": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Bandung, Indonesia"
+      },
+      "serviceType": "Photography and Videography",
+      "description": "Jasa dokumentasi event, bisnis, dan brand di Bandung.",
+      "url": "https://gunawansatyakusuma.my.id/jasa-foto-video-bandung.html"
+    },
+
+    /* =========================
+       SERVICE: G-LOOP SYSTEM
+    ========================= */
+    {
+      "@type": "Service",
+      "@id": "https://gunawansatyakusuma.my.id/#gloop-service",
+      "name": "G-Loop Visibility System",
+      "provider": {
+        "@id": "https://gunawansatyakusuma.my.id/#person"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Indonesia"
+      },
+      "serviceType": "Digital Visibility System",
+      "description": "Sistem visibilitas digital berbasis siklus konten, Google Maps, dan distribusi traffic."
+    },
+
+    /* =========================
+       CONTACT POINT
+    ========================= */
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "telephone": "+62-895-1523-2062",
+      "availableLanguage": ["Indonesian"],
+      "areaServed": "ID"
+    },
+
+    /* =========================
+       BREADCRUMB (SEO STRUCTURE)
+    ========================= */
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://gunawansatyakusuma.my.id/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://gunawansatyakusuma.my.id/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "G-Loop",
+          "item": "https://gunawansatyakusuma.my.id/g-loop.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Jasa Foto Video Bandung",
+          "item": "https://gunawansatyakusuma.my.id/jasa-foto-video-bandung.html"
+        }
+      ]
     }
 
   ]
