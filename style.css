@@ -531,3 +531,71 @@ a:hover {
     transform: scale(1.2) translateY(-30px); 
   }
 }
+
+/* =========================
+   G-LOOP MODULE (SAFE ADD-ON)
+========================= */
+
+.gloop-cinematic {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.gloop-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00ffff;
+  letter-spacing: 2px;
+}
+
+.gloop-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(0,255,255,0.2);
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px auto;
+  backdrop-filter: blur(10px);
+}
+
+.gloop-flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.gloop-node {
+  background: rgba(10,10,20,0.9);
+  border: 1px solid rgba(0,255,255,0.25);
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 140px;
+  position: relative;
+}
+
+.gloop-node::after {
+  content: "→";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00ffff;
+}
+
+.gloop-node:last-child::after {
+  display: none;
+}
+
+.gloop-cta {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: linear-gradient(90deg,#00ffff,#00ff99);
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
