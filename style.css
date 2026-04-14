@@ -614,14 +614,14 @@ a:hover {
 }
 
 .video-wrapper video {
-  width: 80%;           /* 🔥 ubah dari 100% ke 80% */
-  max-width: 700px;     /* biar nggak kegedean di layar besar */
+  width: 70%;
+  max-width: 600px;    /* biar nggak kegedean di layar besar */
   height: auto;
 
   object-fit: cover;
   margin-top: 20px;
 
-  border-radius: 12px;  /* bonus biar lebih clean */
+  border-radius: 16px;  /* bonus biar lebih clean */
   box-shadow: 0 0 20px rgba(0,255,255,0.2); /* glow dikit */
 }
 
