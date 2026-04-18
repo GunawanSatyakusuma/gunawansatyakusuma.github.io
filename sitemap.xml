@@ -21,10 +21,12 @@
 <loc>https://gunawansatyakusuma.my.id/contact.html</loc>
 </url>
 
+<!-- PILLAR UTAMA -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/jasa-foto-video-event-bandung.html</loc>
 </url>
 
+<!-- SYSTEM / ENTITY -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/g-loop.html</loc>
 </url>
@@ -53,28 +55,27 @@
 <loc>https://gunawansatyakusuma.my.id/stempel-digital.html</loc>
 </url>
 
+<!-- FAQ -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/faq-jasa-dokumentasi-bandung.html</loc>  
 </url>
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/faq-Visibility-advisory.html</loc>  
-</url>  
+</url>
 
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/cara-foto-google-maps.html</loc>  
-</url>   
-  
+<!-- BLOG ROOT -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/</loc>
 </url>
 
+<!-- BLOG ARTIKEL -->
 <url>
-<loc>https://gunawansatyakusuma.my.id/blog/manfaat-foto-untuk-bisnis.html</loc>
+<loc>https://gunawansatyakusuma.my.id/blog/cara-foto-google-maps.html</loc>  
 </url>
 
 <url>
-<loc>https://gunawansatyakusuma.my.id/blog/jasa-dokumentasi-bandung.html</loc>
+<loc>https://gunawansatyakusuma.my.id/blog/manfaat-foto-untuk-bisnis.html</loc>
 </url>
 
 <url>
@@ -88,10 +89,6 @@
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/jasa-digital-marketing-bandung.html</loc>
 </url>  
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/jasa-dokumentasi-event-bandung.html</loc>
-</url>
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/kenapa-bisnis-tidak-muncul-di-google-maps.html</loc>
@@ -147,7 +144,7 @@
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/github-pages-untuk-umkm.html</loc>
-</url> >  
+</url>
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/panduan-google-maps-bisnis.html</loc>
@@ -176,7 +173,7 @@
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/dokumentasi-pt-kai-pangalengan.html</loc>
 </url>  
-  
+ 
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/dokumentasi-aqiqah-bandung.html</loc>
 </url> 
@@ -225,7 +222,6 @@
 <loc>https://gunawansatyakusuma.my.id/blog/g-loop-method-strategi-digital-marketing-visibilitas-google.html</loc>
 </url>
 
- 
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/strategi-branding-digital-umkm-bandung.html</loc>
 </url>
@@ -234,11 +230,11 @@
 <loc>https://gunawansatyakusuma.my.id/blog/identitas-digital-umkm-bandung-berbasis-visibilitas.html</loc>
 </url>
 
- <url>
+<url>
 <loc>https://gunawansatyakusuma.my.id/blog/narasi-brand-umkm-bandung-di-era-digital.html</loc>
-</url> 
+</url>
 
- <url>
+<url>
 <loc>https://gunawansatyakusuma.my.id/blog/strategi-pemasaran-digital-umkm-bandung-berbasis-persepsi.html</loc>
 </url>
 
@@ -248,10 +244,6 @@
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/g-loop-visibility-advisory-bandung.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/jasa-foto-video-bandung.html</loc>
 </url> 
 
 <url>
@@ -265,5 +257,5 @@
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/jasa-dokumentasi-bandung-branding.html</loc>
 </url>   
-  
+
 </urlset>
