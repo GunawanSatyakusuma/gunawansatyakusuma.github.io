@@ -760,7 +760,7 @@ a:hover {
 }
 
 /* =========================
-   ARTIKEL GRID (UPGRADE)
+   ARTIKEL GRID (FIX FINAL)
 ========================= */
 
 .card-grid {
@@ -770,7 +770,7 @@ a:hover {
   margin-top: 30px;
 }
 
-/* CARD KHUSUS ARTIKEL */
+/* CARD */
 .card-grid .card {
   text-align: left;
   padding: 20px;
@@ -778,7 +778,7 @@ a:hover {
   overflow: hidden;
 }
 
-/* efek glow subtle */
+/* 🔥 FIX UTAMA ADA DI SINI */
 .card-grid .card::before {
   content: "";
   position: absolute;
@@ -786,11 +786,20 @@ a:hover {
   background: radial-gradient(circle at top left, rgba(0,255,255,0.15), transparent 60%);
   opacity: 0;
   transition: 0.3s ease;
+
+  pointer-events: none; /* 🔥 INI YANG WAJIB */
+  z-index: 0;
 }
 
 /* hover glow */
 .card-grid .card:hover::before {
   opacity: 1;
+}
+
+/* pastikan konten di atas overlay */
+.card-grid .card * {
+  position: relative;
+  z-index: 1;
 }
 
 /* judul */
@@ -806,10 +815,21 @@ a:hover {
   margin: 0;
 }
 
-/* hover lebih hidup */
+/* hover animasi */
 .card-grid .card:hover {
   transform: translateY(-6px) scale(1.02);
 }
+
+/* link (optional biar jelas) */
+.card-grid a {
+  color: #ccc;
+}
+
+.card-grid a:hover {
+  color: #00ffff;
+}
+
+/* fix tambahan */
 .artikel-card p {
   margin: 0 10px 10px;
   color: #555;
