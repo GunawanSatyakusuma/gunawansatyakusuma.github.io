@@ -220,6 +220,24 @@ footer {
   margin: 0;
 }
 
+.card ul {
+  padding-left: 18px;
+  margin: 10px 0 0;
+  text-align: left;
+}
+
+.card ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.card ul li a {
+  color: #cccccc;
+}
+
+.card ul li a:hover {
+  color: #00ffff;
+}
 /* hover lebih hidup */
 .card-grid .card:hover {
   transform: translateY(-6px) scale(1.02);
