@@ -2,7 +2,9 @@
    RESET
 ========================= */
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -15,9 +17,48 @@ body {
   line-height: 1.6;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: #ffffff;
-  text-align: center;
   background-color: #070b14;
   overflow-x: hidden;
+}
+
+/* =========================
+   GLOBAL FIX (ANTI BUG KLIK)
+========================= */
+
+/* HAPUS SEMUA OVERLAY LIAR */
+body::before,
+body::after,
+html::before,
+html::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* pastikan semua section normal */
+nav,
+section,
+.container,
+.hero,
+.card-grid,
+.card {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   NAVBAR (WAJIB ADA)
+========================= */
+
+.navbar {
+  position: relative;
+  z-index: 10;
+  padding: 15px 20px;
+  background: rgba(10,10,10,0.8);
+  backdrop-filter: blur(6px);
+}
+
+.nav-links a {
+  margin: 0 10px;
 }
 
 /* =========================
@@ -26,39 +67,37 @@ body {
 
 .hero {
   text-align: center;
-  padding: 60px 20px 30px 20px; /* top 60px, bottom 30px */
+  padding: 60px 20px 30px;
 }
 
-.hero h1{
-font-size:48px;
-background:linear-gradient(90deg,#00ffff,#00ff99);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-margin-bottom:10px;
+.hero h1 {
+  font-size: 48px;
+  background: linear-gradient(90deg,#00ffff,#00ff99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
 }
 
-.hero p{
-opacity:.8;
+.hero p {
+  opacity: .8;
 }
 
 /* =========================
-   CONTAINER (LEBIH RAPAT)
+   CONTAINER
 ========================= */
 
 .container {
   max-width: 720px;
-  margin: 24px auto;   /* sebelumnya 40px */
-  padding: 24px;       /* sebelumnya 32px */
-  
+  margin: 24px auto;
+  padding: 24px;
   background: rgba(20, 20, 20, 0.75);
   backdrop-filter: blur(4px);
-  
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
 /* =========================
-   GLOBAL LINK SYSTEM
+   LINK GLOBAL
 ========================= */
 
 a {
@@ -67,69 +106,34 @@ a {
   transition: 0.3s ease;
 }
 
-a:visited {
-  color: #00ffff;
-}
-
 a:hover {
   color: #ffffff;
 }
 
-a:active {
-  color: #00ffff;
-}
-
 /* =========================
-   TYPOGRAPHY (FIX SPACING)
+   TYPOGRAPHY
 ========================= */
 
-/* RESET margin default biar konsisten */
-h1, h2, p {
+h1, h2, h3, p {
   margin: 0;
 }
 
 h1 {
   font-size: 30px;
-  margin-bottom: 12px; /* lebih balance */
+  margin-bottom: 12px;
 }
 
 h2:hover {
-  color: #ffffff;          /* warna berubah */
-  transform: scale(1.2);   /* membesar */
-  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; 
+  color: #ffffff;
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #00ffff;
 }
 
 p {
   font-size: 15px;
   color: #ccc;
-  margin-top: 10px;    /* sebelumnya 12px */
+  margin-top: 10px;
   text-align: left;
-}
-
-/* =========================
-   LIST
-========================= */
-
-.highlight-list {
-  list-style: none;
-  padding: 0;
-  margin: 16px 0; /* lebih rapat */
-  text-align: left;
-}
-
-.highlight-list li {
-  margin: 8px 0; /* sebelumnya 12px */
-  font-size: 16px;
-}
-
-/* =========================
-   DIVIDER
-========================= */
-
-.divider {
-  height: 1px;
-  background: #333;
-  margin: 20px 0; /* sebelumnya 28px */
 }
 
 /* =========================
@@ -138,13 +142,12 @@ p {
 
 .btn {
   display: inline-block;
-  margin-top: 14px; /* lebih rapat */
+  margin-top: 14px;
   padding: 12px 28px;
   border-radius: 12px;
   background: #00ffff;
   color: #000;
   font-weight: bold;
-  transition: 0.3s;
 }
 
 .btn:hover {
@@ -156,9 +159,10 @@ p {
 ========================= */
 
 footer {
-  margin-top: 24px; /* sebelumnya 40px */
+  margin-top: 24px;
   font-size: 12px;
   color: #aaa;
+  text-align: center;
 }
 
 /* =========================
@@ -170,11 +174,10 @@ footer {
   border-radius: 50%;
   margin-top: 20px;
   border: 2px solid #00ffff;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
 }
 
 /* =========================
-   ARTIKEL GRID (FIX FINAL)
+   CARD GRID
 ========================= */
 
 .card-grid {
@@ -186,44 +189,26 @@ footer {
 
 /* CARD */
 .card {
-  text-align: left;
   padding: 20px;
-  position: relative;
-  overflow: hidden;
-  background: rgba(30,30,30,0.6);
   border-radius: 12px;
-}
-
-/* OVERLAY VISUAL (AMAN) */
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top left, rgba(0,255,255,0.15), transparent 60%);
-  opacity: 0;
+  background: rgba(30,30,30,0.6);
   transition: 0.3s ease;
-  pointer-events: none; /* PENTING */
 }
 
 /* HOVER */
-.card:hover::before {
-  opacity: 1;
-}
-
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
 }
 
 /* JUDUL */
 .card h3 {
-  font-size: 16px;
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 /* LIST */
 .card ul {
   padding-left: 18px;
-  margin: 0;
 }
 
 .card ul li {
@@ -231,10 +216,10 @@ footer {
   font-size: 14px;
 }
 
-/* LINK (NORMAL, TANPA Z-INDEX GILA) */
+/* LINK DALAM CARD (FIX FINAL) */
 .card a {
   color: #ccc;
-  text-decoration: none;
+  display: inline-block;
 }
 
 .card a:hover {
