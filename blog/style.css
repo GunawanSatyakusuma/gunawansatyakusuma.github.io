@@ -279,3 +279,17 @@ html::before,
 html::after {
   pointer-events: none !important;
 }
+
+.card {
+  position: relative;
+  z-index: 1;
+}
+
+.card * {
+  position: relative;
+  z-index: 5;
+}
+
+.card::before {
+  pointer-events: none !important;
+}
