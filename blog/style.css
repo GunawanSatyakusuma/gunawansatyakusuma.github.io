@@ -293,3 +293,9 @@ html::after {
 .card::before {
   pointer-events: none !important;
 }
+
+a {
+  position: relative;
+  z-index: 99999;
+  pointer-events: auto !important;
+}
