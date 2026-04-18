@@ -174,7 +174,7 @@ footer {
 }
 
 /* =========================
-   ARTIKEL GRID (UPGRADE FIX)
+   ARTIKEL GRID (FIX FINAL)
 ========================= */
 
 .card-grid {
@@ -184,59 +184,46 @@ footer {
   margin-top: 30px;
 }
 
-/* CARD AKTIF (PENTING) */
+/* CARD */
 .card {
-  pointer-events: auto;
-}
-
-/* CARD KHUSUS ARTIKEL */
-.card-grid .card {
   text-align: left;
   padding: 20px;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  background: rgba(30,30,30,0.6);
+  border-radius: 12px;
 }
 
-/* OVERLAY AMAN (TIDAK NUTUP KLIK) */
-.card-grid .card::before {
+/* OVERLAY VISUAL (AMAN) */
+.card::before {
   content: "";
   position: absolute;
   inset: 0;
   background: radial-gradient(circle at top left, rgba(0,255,255,0.15), transparent 60%);
   opacity: 0;
   transition: 0.3s ease;
-  pointer-events: none; /* 🔥 KUNCI */
+  pointer-events: none; /* PENTING */
 }
 
-/* hover glow */
-.card-grid .card:hover::before {
+/* HOVER */
+.card:hover::before {
   opacity: 1;
 }
 
-/* hover animasi */
-.card-grid .card:hover {
-  transform: translateY(-6px) scale(1.02);
+.card:hover {
+  transform: translateY(-6px);
 }
 
-/* judul */
-.card-grid .card h3 {
+/* JUDUL */
+.card h3 {
   font-size: 16px;
-  margin-bottom: 8px;
-}
-
-/* deskripsi */
-.card-grid .card p {
-  font-size: 13px;
-  opacity: 0.75;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 /* LIST */
 .card ul {
   padding-left: 18px;
-  margin: 10px 0 0;
-  text-align: left;
+  margin: 0;
 }
 
 .card ul li {
@@ -244,58 +231,12 @@ footer {
   font-size: 14px;
 }
 
-/* LINK FIX */
-.card ul li a {
-  color: #cccccc;
-  position: relative;
-  z-index: 2; /* 🔥 biar di atas layer */
+/* LINK (NORMAL, TANPA Z-INDEX GILA) */
+.card a {
+  color: #ccc;
+  text-decoration: none;
 }
 
-.card ul li a:hover {
+.card a:hover {
   color: #00ffff;
-}
-
-/* MATIKAN SEMUA BACKGROUND OVERLAY DARI INTERAKSI */
-body::before,
-body::after,
-html::before {
-  pointer-events: none !important;
-}
-
-.card-grid,
-.card,
-.card * {
-  pointer-events: auto;
-}
-
-a {
-  position: relative;
-  z-index: 9999;
-}
-
-body::before,
-body::after,
-html::before,
-html::after {
-  pointer-events: none !important;
-}
-
-.card {
-  position: relative;
-  z-index: 1;
-}
-
-.card * {
-  position: relative;
-  z-index: 5;
-}
-
-.card::before {
-  pointer-events: none !important;
-}
-
-a {
-  position: relative;
-  z-index: 99999;
-  pointer-events: auto !important;
 }
