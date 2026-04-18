@@ -184,6 +184,10 @@ footer {
   margin-top: 30px;
 }
 
+.card-grid .card::before {
+  pointer-events: none;
+}
+
 /* CARD KHUSUS ARTIKEL */
 .card-grid .card {
   text-align: left;
