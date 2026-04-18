@@ -254,3 +254,16 @@ footer {
 .card ul li a:hover {
   color: #00ffff;
 }
+
+/* MATIKAN SEMUA BACKGROUND OVERLAY DARI INTERAKSI */
+body::before,
+body::after,
+html::before {
+  pointer-events: none !important;
+}
+
+.card-grid,
+.card,
+.card * {
+  pointer-events: auto;
+}
