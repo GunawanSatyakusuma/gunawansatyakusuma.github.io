@@ -267,3 +267,15 @@ html::before {
 .card * {
   pointer-events: auto;
 }
+
+a {
+  position: relative;
+  z-index: 9999;
+}
+
+body::before,
+body::after,
+html::before,
+html::after {
+  pointer-events: none !important;
+}
