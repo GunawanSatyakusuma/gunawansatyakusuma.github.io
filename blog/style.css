@@ -174,12 +174,9 @@ footer {
 }
 
 /* =========================
-   ARTIKEL GRID (UPGRADE)
+   ARTIKEL GRID (UPGRADE FIX)
 ========================= */
 
-.card {
-  pointer-events: none;
-}
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -187,8 +184,9 @@ footer {
   margin-top: 30px;
 }
 
-.card-grid .card::before {
-  pointer-events: none;
+/* CARD AKTIF (PENTING) */
+.card {
+  pointer-events: auto;
 }
 
 /* CARD KHUSUS ARTIKEL */
@@ -197,9 +195,10 @@ footer {
   padding: 20px;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
-/* efek glow subtle */
+/* OVERLAY AMAN (TIDAK NUTUP KLIK) */
 .card-grid .card::before {
   content: "";
   position: absolute;
@@ -207,11 +206,17 @@ footer {
   background: radial-gradient(circle at top left, rgba(0,255,255,0.15), transparent 60%);
   opacity: 0;
   transition: 0.3s ease;
+  pointer-events: none; /* 🔥 KUNCI */
 }
 
 /* hover glow */
 .card-grid .card:hover::before {
   opacity: 1;
+}
+
+/* hover animasi */
+.card-grid .card:hover {
+  transform: translateY(-6px) scale(1.02);
 }
 
 /* judul */
@@ -227,6 +232,7 @@ footer {
   margin: 0;
 }
 
+/* LIST */
 .card ul {
   padding-left: 18px;
   margin: 10px 0 0;
@@ -238,14 +244,13 @@ footer {
   font-size: 14px;
 }
 
+/* LINK FIX */
 .card ul li a {
   color: #cccccc;
+  position: relative;
+  z-index: 2; /* 🔥 biar di atas layer */
 }
 
 .card ul li a:hover {
   color: #00ffff;
-}
-/* hover lebih hidup */
-.card-grid .card:hover {
-  transform: translateY(-6px) scale(1.02);
 }
