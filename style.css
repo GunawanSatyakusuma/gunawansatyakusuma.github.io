@@ -469,6 +469,18 @@ a:hover {
   border-radius: 12px;
 }
 
+.gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
 
 /* =========================
    INSTAGRAM
