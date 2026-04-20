@@ -922,3 +922,37 @@ a:hover {
   color: white;
   cursor: pointer;
 }
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.service-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.service-card li {
+  margin-bottom: 6px;
+}
