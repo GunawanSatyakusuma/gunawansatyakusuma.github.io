@@ -471,16 +471,15 @@ a:hover {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
 .gallery img {
   width: 100%;
-  height: auto;
-  display: block;
+  aspect-ratio: 2 / 3; /* rasio 200:300 */
+  object-fit: cover;
 }
-
 
 /* =========================
    INSTAGRAM
