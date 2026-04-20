@@ -477,8 +477,9 @@ a:hover {
 
 .gallery img {
   width: 100%;
-  aspect-ratio: 2 / 3; /* rasio 200:300 */
+  aspect-ratio: 3 / 2; /* landscape */
   object-fit: cover;
+  display: block;
 }
 
 /* =========================
