@@ -470,13 +470,13 @@ a:hover {
 }
 
 .gallery {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
   gap: 10px;
 }
 
 .gallery img {
   width: 100%;
-  max-width: 300px;
   height: auto;
   display: block;
 }
