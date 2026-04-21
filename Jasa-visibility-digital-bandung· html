@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jasa Visibility Digital Bandung | G-Loop Visibility Advisory</title>
+
+<meta name="description" content="Jasa visibility digital Bandung berbasis dokumentasi nyata & Google Maps. Bantu bisnis Anda lebih terlihat, dipercaya, dan dipilih.">
+
+<link rel="canonical" href="https://gunawansatyakusuma.my.id/g-loop-visibility.html" />
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="nodes.html">Nodes</a>
+    <a href="g-loop.html">G-Loop</a>
+    <a href="jasa-foto-video-event-bandung.html">Jasa Foto & Video</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero container">
+<img src="assets/images/logo-gloop.png" alt="G-Loop Visibility" class="profile-img">
+
+  <h1>Jasa Visibility Digital Bandung</h1>
+
+  <p><strong>Bisnis Anda sudah berjalan. Tapi apakah sudah terlihat di Google?</strong></p>
+
+  <p>
+    Kami membantu bisnis Anda lebih mudah ditemukan, lebih dipercaya,
+    dan lebih dipilih melalui sistem visibilitas berbasis dokumentasi & Google Maps.
+  </p>
+
+  <p style="font-size:14px; opacity:0.8;">
+    Berbasis metode <a href="g-loop.html">G-Loop</a> oleh Gunawan Satyakusuma
+  </p>
+
+  <div class="cta">
+    <a class="btn" href="https://wa.me/6289515232062" target="_blank">
+      Konsultasi Sekarang
+    </a>
+
+    <a class="btn secondary" href="#penjelasan">
+      Lihat Cara Kerja
+    </a>
+  </div>
+
+</section>
+
+<!-- MASALAH -->
+<section class="section container">
+
+  <h2>Kenapa bisnis tidak terlihat?</h2>
+
+  <div class="grid-2">
+
+    <div class="card">
+      <ul>
+        <li>Bisnis tidak muncul di Google Maps</li>
+        <li>Sudah punya foto tapi tidak berdampak</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <ul>
+        <li>Konten tidak membangun kepercayaan</li>
+        <li>Promosi tidak menghasilkan visibilitas</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p><strong>Jika bisnis tidak terlihat, maka secara praktis bisnis tidak ada.</strong></p>
+
+</section>
+
+<!-- PENDEKATAN -->
+<section id="penjelasan" class="section container">
+
+  <h2>Solusi: Sistem Visibility (G-Loop)</h2>
+
+  <p>
+    Kami menggunakan pendekatan berbasis sistem:
+    <strong>aktivitas → dokumentasi → distribusi → persepsi → kepercayaan</strong>
+  </p>
+
+  <p>
+    Bukan sekadar konten. Tapi membangun jejak digital yang terbaca dan dipercaya.
+  </p>
+
+</section>
+
+<!-- VALUE -->
+<section class="section container">
+
+  <h2>Apa yang Anda Dapatkan</h2>
+
+  <div class="card">
+    <ul>
+      <li>Dokumentasi foto & video profesional</li>
+      <li>Optimasi Google Business Profile</li>
+      <li>Strategi visibilitas berbasis lokasi</li>
+      <li>Peningkatan kepercayaan visual bisnis</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- TARGET -->
+<section class="section container">
+
+  <h2>Cocok Untuk</h2>
+
+  <div class="grid-2">
+
+    <div class="card">
+      <ul>
+        <li>UMKM di Bandung</li>
+        <li>Bisnis kuliner, jasa, retail</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <ul>
+        <li>Brand yang ingin tampil profesional</li>
+        <li>Bisnis yang ingin muncul di Google</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DIFFERENTIATOR -->
+<section class="section container">
+
+  <h2>Kenapa G-Loop?</h2>
+
+  <p>
+    Pendekatan ini bukan teori marketing. Ini berasal dari praktik dokumentasi nyata
+    dan pengalaman lapangan.
+  </p>
+
+  <p>
+    Anda tidak hanya mendapatkan konten,
+    tetapi sistem yang membuat bisnis Anda terus terlihat.
+  </p>
+
+</section>
+
+<!-- CTA -->
+<section class="section container">
+
+  <h2>Mulai Tingkatkan Visibilitas Bisnis Anda</h2>
+
+  <blockquote>
+    Semakin lama bisnis Anda tidak terlihat, semakin banyak peluang yang hilang.
+  </blockquote>
+
+  <div class="cta">
+    <a class="btn" href="https://wa.me/6289515232062" target="_blank">
+      Konsultasi via WhatsApp
+    </a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Gunawan Satyakusuma<br>
+  G-Loop Visibility Advisory
+</footer>
+
+<nav class="bottom-nav">
+   <div class="menu">
+    <a href="https://wa.me/6289515232062">WhatsApp</a>
+   </div>
+</nav>
+
+</body>
+</html>
 
