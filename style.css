@@ -93,46 +93,10 @@ html::before {
    NAVIGATION
 ========================= */
 
-nav {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-
-  padding: 15px 25px;
-  max-width: 900px;
-  width: calc(100% - 40px);
-
-  background: rgba(0,0,0,0.5);
-  border: 1px solid rgba(0,255,255,0.2);
-  border-radius: 20px;
-
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(0,255,255,0.08);
-}
-
-nav a {
-  margin: 0 18px;
-  font-size: 16px;
-  color: #cccccc;
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s ease;
-}
-
-nav a:hover {
-  color: #00ffff;
-  text-shadow: 0 0 4px rgba(0,255,255,0.6);
-}
-
-/* =========================
-   BOTTOM NAVIGATION
-========================= */
-
 .bottom-nav {
   position: fixed;
   bottom: 20px;
+  top: auto; /* 🔥 biar aman dari konflik */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -145,32 +109,7 @@ nav a:hover {
   align-items: center;
   justify-content: space-around;
 
-  height: 60px; /* 🔥 biar gak tinggi */
-
-  background: rgba(0,0,0,0.5);
-  border: 1px solid rgba(0,255,255,0.2);
-  border-radius: 20px;
-
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(0,255,255,0.08);
-}
-
-.bottom-nav {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-
-  padding: 10px 15px;
-  max-width: 500px;
-  width: calc(100% - 40px);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  height: 60px; /* 🔥 biar gak tinggi */
+  height: 60px;
 
   background: rgba(0,0,0,0.5);
   border: 1px solid rgba(0,255,255,0.2);
@@ -184,7 +123,6 @@ nav a:hover {
   color: #00ffff;
   text-shadow: 0 0 4px rgba(0,255,255,0.6);
 }
-
 /* =========================
    TYPOGRAPHY
 ========================= */
