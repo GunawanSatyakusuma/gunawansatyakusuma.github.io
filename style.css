@@ -142,9 +142,11 @@ nav a:hover {
   width: calc(100% - 40px);
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* 🔥 GANTI INI */
   align-items: center;
-  gap: 6px;
+  justify-content: space-between; /* biar rapi */
+
+  gap: 10px;
 
   background: rgba(0,0,0,0.5);
   border: 1px solid rgba(0,255,255,0.2);
@@ -153,7 +155,6 @@ nav a:hover {
   backdrop-filter: blur(10px);
   box-shadow: 0 0 20px rgba(0,255,255,0.08);
 }
-
 .bottom-nav h1 {
   font-size: 12px;
   margin: 0;
