@@ -10,21 +10,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* =========================
+   BODY (FIX + FONT UPGRADE)
+========================= */
+
 body {
   margin: 0;
-  padding-top: 100px; /* FIX NAV KETIMPA */
+  padding-top: 100px;
+  padding-bottom: 140px;
+
   line-height: 1.6;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  letter-spacing: 0.2px;
+
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
   color: #ffffff;
   text-align: center;
   background-color: #070b14;
   overflow-x: hidden;
 }
-
-body {
-  padding-bottom: 140px;
-}
-
 
 /* =========================
    GLOBAL IMAGE
@@ -86,7 +90,7 @@ html::before {
 }
 
 /* =========================
-   NAVIGATION (FIXED)
+   NAVIGATION
 ========================= */
 
 nav {
@@ -113,16 +117,17 @@ nav a {
   font-size: 16px;
   color: #cccccc;
   text-decoration: none;
+  text-align: center;
   transition: 0.3s ease;
 }
 
 nav a:hover {
   color: #00ffff;
-  text-shadow: 0 0 8px #00ffff;
+  text-shadow: 0 0 4px rgba(0,255,255,0.6);
 }
 
 /* =========================
-   BOTTOM NAVIGATION (FIXED)
+   BOTTOM NAVIGATION
 ========================= */
 
 .bottom-nav {
@@ -137,7 +142,7 @@ nav a:hover {
   width: calc(100% - 40px);
 
   display: flex;
-  flex-direction: column; /* boleh column */
+  flex-direction: column;
   align-items: center;
   gap: 6px;
 
@@ -149,26 +154,18 @@ nav a:hover {
   box-shadow: 0 0 20px rgba(0,255,255,0.08);
 }
 
-.bottom-nav {
-  top: auto !important;   /* 🔥 ini kunci */
-  bottom: 20px;
-}
-
-/* H1 kecil biar nggak gede */
 .bottom-nav h1 {
   font-size: 12px;
   margin: 0;
   color: #00ffff;
 }
 
-/* WRAPPER MENU (INI KUNCI 🔥) */
 .bottom-nav .menu {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-/* LINK */
 .bottom-nav a {
   font-size: 18px;
   text-align: center;
@@ -176,61 +173,9 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* hover */
 .bottom-nav a:hover {
   color: #00ffff;
-  text-shadow: 0 0 8px #00ffff;
-}
-
-/* =========================
-   NAV LINKS
-========================= */
-
-nav a {
-  color: #cccccc;
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s ease;
-}
-
-/* hover effect */
-nav a:hover {
-  color: #00ffff;
-  text-shadow: 0 0 8px #00ffff;
-}
-
-/* =========================
-   CONTAINER
-========================= */
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 24px;
-}
-
-/* container bawah */
-.container.bottom {
-  margin-bottom: 140px; /* aman dari nav */
-}
-/* =========================
-   HERO
-========================= */
-
-.hero {
-  padding: 60px 20px 20px;
-}
-
-.hero h1 {
-  font-size: 38px;
-  background: linear-gradient(90deg,#00ffff,#00ff99);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  opacity: .85;
+  text-shadow: 0 0 4px rgba(0,255,255,0.6);
 }
 
 /* =========================
@@ -248,7 +193,7 @@ h2 {
 
 h2:hover {
   transform: scale(1.05);
-  text-shadow: 0 0 10px #00ffff;
+  text-shadow: 0 0 6px rgba(0,255,255,0.5);
 }
 
 h3 {
@@ -281,6 +226,9 @@ a:hover {
   color: #ffffff;
 }
 
+/* =========================
+   (SISANYA TETAP SAMA)
+========================= */
 /* =========================
    GRID
 ========================= */
