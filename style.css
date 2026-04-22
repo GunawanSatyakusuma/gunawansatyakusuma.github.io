@@ -93,38 +93,37 @@ html::before {
 /* ======================
    UP NAVBAR
 ====================== */
-.navbar {
+
+nav {
   position: fixed;
-  width: 100%;
-  top: 0;
-  background: rgba(2,6,23,0.75);
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  padding: 15px 25px;
+  max-width: 900px;
+  width: calc(100% - 40px);
+
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(0,255,255,0.2);
+  border-radius: 20px;
+
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  z-index: 999;
+  box-shadow: 0 0 20px rgba(0,255,255,0.08);
 }
 
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 0;
-}
-
-.logo {
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.navbar a {
-  color: #cbd5f5;
+nav a {
+  margin: 0 18px;
+  font-size: 16px;
+  color: #cccccc;
   text-decoration: none;
-  margin-left: 20px;
-  font-size: 14px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
-.navbar a:hover {
-  color: #38bdf8;
+nav a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
 }
 
 /* =========================
