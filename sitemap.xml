@@ -57,8 +57,23 @@
 <loc>https://gunawansatyakusuma.my.id/nodes.html</loc>
 </url>
 
+<!-- =========================
+     CORE HUB (NODE GUNAWAN)
+========================= -->
+
 <url>
 <loc>https://gunawansatyakusuma.my.id/nodegunawan/index.html</loc>
+<lastmod>2026-04-24</lastmod>
+</url>
+
+<url>
+<loc>https://gunawansatyakusuma.my.id/nodegunawan/core-hub-relasional.html</loc>
+<lastmod>2026-04-24</lastmod>
+</url>
+
+<url>
+<loc>https://gunawansatyakusuma.my.id/nodegunawan/struktur-relasional.html</loc>
+<lastmod>2026-04-24</lastmod>
 </url>
 
 <url>
