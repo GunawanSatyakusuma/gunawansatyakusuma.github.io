@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<!-- =========================
+     CORE PAGES
+========================= -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/</loc>
+<lastmod>2026-04-24</lastmod>
 </url>
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/about.html</loc>
+<lastmod>2026-04-24</lastmod>
 </url>
 
 <url>
@@ -21,12 +26,21 @@
 <loc>https://gunawansatyakusuma.my.id/contact.html</loc>
 </url>
 
-<!-- PILLAR UTAMA -->
+<!-- =========================
+     MONEY PAGE (PILLAR)
+========================= -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/jasa-foto-video-event-bandung.html</loc>
+<lastmod>2026-04-24</lastmod>
 </url>
 
-<!-- SYSTEM / ENTITY -->
+<url>
+<loc>https://gunawansatyakusuma.my.id/Jasa-visibility-digital-bandung.html</loc>
+</url>
+
+<!-- =========================
+     SYSTEM / ENTITY
+========================= -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/g-loop.html</loc>
 </url>
@@ -40,12 +54,12 @@
 </url>
 
 <url>
-<loc>https://gunawansatyakusuma.my.id/nodegunawan/index.html</loc>
+<loc>https://gunawansatyakusuma.my.id/nodes.html</loc>
 </url>
 
 <url>
-<loc>https://gunawansatyakusuma.my.id/nodes.html</loc>
-</url>  
+<loc>https://gunawansatyakusuma.my.id/nodegunawan/index.html</loc>
+</url>
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/narrative-protocol/index.html</loc>
@@ -55,23 +69,30 @@
 <loc>https://gunawansatyakusuma.my.id/stempel-digital/index.html</loc>
 </url>
 
-<!-- FAQ -->
-<url>
-<loc>https://gunawansatyakusuma.my.id/faq-jasa-dokumentasi-bandung.html</loc>  
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/faq-Visibility-advisory.html</loc>  
-</url>
-
-<!-- BLOG ROOT -->
+<!-- =========================
+     BLOG ROOT
+========================= -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/</loc>
 </url>
 
-<!-- BLOG ARTIKEL -->
+<!-- =========================
+     G-LOOP NODES (NEW)
+========================= -->
 <url>
-<loc>https://gunawansatyakusuma.my.id/blog/cara-foto-google-maps.html</loc>  
+<loc>https://gunawansatyakusuma.my.id/blog/jasa-dokumentasi-event-bandung.html</loc>
+<lastmod>2026-04-24</lastmod>
+</url>
+
+<url>
+<loc>https://gunawansatyakusuma.my.id/blog/studi-kasus-dokumentasi-event-bandung.html</loc>
+</url>
+
+<!-- =========================
+     BLOG ARTICLES
+========================= -->
+<url>
+<loc>https://gunawansatyakusuma.my.id/blog/cara-foto-google-maps.html</loc>
 </url>
 
 <url>
@@ -84,197 +105,44 @@
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/kesalahan-dokumentasi-bisnis.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/jasa-digital-marketing-bandung.html</loc>
-</url>  
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/kenapa-bisnis-tidak-muncul-di-google-maps.html</loc>
-</url>  
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/optimasi-google-business-profile.html</loc>
 </url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/strategi-foto-produk-google-maps.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/kekuatan-foto-google-maps-local-guide.html</loc>
-</url>    
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/strategi-visibilitas-bisnis-google-maps.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/jejak-digital-yayasan-al-husainiyyah.html</loc>
 </url>
 
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/jejak-digital-n2sp-fotografi-bandung.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/lokasi-foto-bandung.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/hidden-gem-foto-bandung.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/tempat-foto-prewedding-bandung.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/spot-foto-bisnis-bandung.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/digital-marketing-bandung.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/jasa-visibility-digital-bandung.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/github-pages-untuk-umkm.html</loc>
-</url>
-
+<!-- =========================
+     GUIDES
+========================= -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/panduan-google-maps-bisnis.html</loc>
 </url>
 
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/dokumentasi-villa-ms-bandung.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/3-hari-bersama-rei-kalimantan.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/visibility-advisory-bandung.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/visibilitas-umkm-bandung-bukan-sekadar-marketing.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/kesalahan-digital-marketing-umkm-bandung.html</loc>
-</url>  
-
+<!-- =========================
+     EXPERIENCE / CASES
+========================= -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/dokumentasi-pt-kai-pangalengan.html</loc>
-</url>  
- 
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/dokumentasi-aqiqah-bandung.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/dokumentasi-tepang-sono-fisip-unpad-82.html</loc>
 </url>
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/blog/dokumentasi-astra-koperasi-bali.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/jasa-foto-video-bandung-sistem-visibilitas.html</loc>
 </url>
 
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/jasa-dokumentasi-bandung-umkm-visibilitas.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/seo-modern-2026-berbasis-kepercayaan.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/seo-umkm-tanpa-backlink.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/studi-kasus-g-loop-method-seo-entitas.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/di-balik-jasa-foto-video.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/fotografer-bandung.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/videografer-bandung.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/g-loop-method-strategi-digital-marketing-visibilitas-google.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/strategi-branding-digital-umkm-bandung.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/identitas-digital-umkm-bandung-berbasis-visibilitas.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/narasi-brand-umkm-bandung-di-era-digital.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/strategi-pemasaran-digital-umkm-bandung-berbasis-persepsi.html</loc>
-</url>
-
+<!-- =========================
+     IDENTITY & JOURNEY
+========================= -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/biography.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/g-loop-visibility-advisory-bandung.html</loc>
-</url> 
+</url>
 
 <url>
 <loc>https://gunawansatyakusuma.my.id/jejak-perjalanan-dokumentasi-google-maps/index.html</loc>
-</url> 
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/paket-harga-jasa-dokumentasi-bandung.html</loc>
-</url>  
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/blog/jasa-dokumentasi-bandung-branding.html</loc>
 </url>
 
- <url>
-<loc>https://gunawansatyakusuma.my.id/jejak-perjalanan-dokumentasi-google-maps/ambon/jembatan-merah-putih.html</loc>
-</url>
-
-  <url>
-<loc>https://gunawansatyakusuma.my.id/jejak-perjalanan-dokumentasi-google-maps/ambon/masjid-raya-alfatah.html</loc>
-</url>
-
- <url>
-<loc>https://gunawansatyakusuma.my.id/Jasa-visibility-digital-bandung.html</loc>
-</url> 
-
- <url>
-<loc>https://gunawansatyakusuma.my.id/blog/training-annual-meeting-bisawi-2026.html</loc>
-</url> 
-
-<!-- CONTEXT GRAVITY FRAMEWORK -->
+<!-- =========================
+     CONTEXT GRAVITY
+========================= -->
 <url>
 <loc>https://gunawansatyakusuma.my.id/context-gravity/index.html</loc>
 </url>
@@ -287,26 +155,4 @@
 <loc>https://gunawansatyakusuma.my.id/context-gravity/context-gravity-vs-seo.html</loc>
 </url>
 
-<!-- COMPONENTS -->
-<url>
-<loc>https://gunawansatyakusuma.my.id/context-gravity/entity-clarity.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/context-gravity/context-production.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/context-gravity/interconnection.html</loc>
-</url>
-
-<url>
-<loc>https://gunawansatyakusuma.my.id/context-gravity/temporal-consistency.html</loc>
-</url>
-
-<!-- CASE STUDY -->
-<url>
-<loc>https://gunawansatyakusuma.my.id/context-gravity/studi-kasus-context-gravity.html</loc>
-</url>
- 
 </urlset>
