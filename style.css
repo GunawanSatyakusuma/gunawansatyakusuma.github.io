@@ -250,11 +250,13 @@ a:hover {
 ========================= */
 
 .card {
+  max-width: 600px;
+  margin: 15px auto 0;
+  padding: 0;
   background: rgba(255,255,255,0.02);
   border: 1px solid rgba(0,255,255,0.2);
   border-radius: 16px;
-  padding: 30px;
-  margin-top: 15px;
+  overflow: hidden;
   transition: 0.3s ease;
   backdrop-filter: blur(10px);
 }
