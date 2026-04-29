@@ -223,11 +223,12 @@ a:hover {
 
 .card img {
   width: 100%;
+  max-width: 700px;
   height: auto;
   border-radius: 16px;
   display: block;
+  margin: 0 auto;
 }
-
 @media (max-width: 768px) {
   .grid-2 {
     grid-template-columns: 1fr;
